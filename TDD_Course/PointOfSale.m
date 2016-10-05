@@ -11,63 +11,8 @@
 #import "Cart.h"
 #import "BarcodeScannedCommand.h"
 #import "Operation.h"
-
-@interface FinishOperation: NSObject <Operation>
-@property (weak) id<Display> display;
-@property (weak) Cart *cart;
-
-+ (id)operationWithCart:(Cart *)cart andDisplay:(id)display;
-@end
-
-@implementation FinishOperation
-- (void)run:(Command *)command {
-  [self.display displayTotal:self.cart.total];
-}
-
-+ (id)operationWithCart:(Cart *)cart andDisplay:(id)display {
-  FinishOperation *operation = [FinishOperation new];
-  operation.cart = cart;
-  operation.display = display;
-  return operation;
-}
-@end
-
-@interface BarcodeScannedOperation : NSObject <Operation>
-@property (weak) id<Display> display;
-@property (weak) id<Catalog> catalog;
-@property (weak) Cart *cart;
-
-+ (id)operationWithCatalog:(id)catalog cart:(Cart *)cart andDisplay:(id)display;
-@end
-
-@implementation BarcodeScannedOperation
-- (void)run:(Command *)command {
-  [self onBarcodeScanned:(BarcodeScannedCommand *) command];
-}
-
-+ (id)operationWithCatalog:(id)catalog cart:(Cart *)cart andDisplay:(id)display {
-  BarcodeScannedOperation *operation = [BarcodeScannedOperation new];
-  operation.display = display;
-  operation.cart = cart;
-  operation.catalog = catalog;
-  return operation;
-}
-
-- (void)onBarcodeScanned:(BarcodeScannedCommand *)command {
-  Price *price = [self.catalog findPrice:command.barcode];
-  if(price)
-    [self priceFound:price];
-  else
-    [self.display displayPriceNotFound];
-}
-
-- (void)priceFound:(Price *)price {
-  [self.cart addPrice:price];
-  [self.display displayPriceFound:price];
-}
-
-@end
-
+#import "FinishOperation.h"
+#import "BarcodeScannedOperation.h"
 
 @interface PointOfSale ()
 @property(nonatomic, strong) id catalog;
