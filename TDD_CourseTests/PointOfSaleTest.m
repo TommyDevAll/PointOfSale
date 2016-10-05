@@ -19,6 +19,7 @@
 #import "Cart.h"
 #import "CommandExecutor.h"
 #import "Cart.h"
+#import "TestInputProvider.h"
 
 @interface PointOfSaleTest : XCTestCase
 @property id<Catalog> catalog;
@@ -66,11 +67,13 @@
 - (void)test_total {
   Cart *cart = OCMClassMock(Cart.class);
   PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display andCart:cart];
-  InMemoryScannerInput *scanner = [InMemoryScannerInput scannerWithBarcodes:@[]];
+  id<Input> inputProvider = [TestInputProvider providerWithCommands:@[
+      [FinishCommand new]
+  ]];
   CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
 
   [OCMStub(cart.total) andReturnValue:OCMOCK_VALUE(1)];
-  [executor consume:scanner];
+  [executor consume:inputProvider];
 
   OCMVerify([self.display displayTotal:1]);
 }

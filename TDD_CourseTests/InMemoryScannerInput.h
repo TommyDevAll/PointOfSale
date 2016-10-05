@@ -7,7 +7,6 @@
 #import "Scanner.h"
 
 @class PointOfSale;
-@protocol BarcodeScannedCommandHandler;
 
 @interface InMemoryScannerInput : NSObject <Scanner>
 - (instancetype)initWithBarcodes:(NSArray *)barcodes;
