@@ -7,16 +7,18 @@
 
 @class Price;
 
-@interface Total : NSObject
+@interface Cart : NSObject
 - (instancetype)initWithPrices:(NSArray<Price *> *)prices;
 
-+ (instancetype)totalWithPrices:(NSArray<Price *> *)prices;
++ (instancetype)cartWithPrices:(NSArray<Price *> *)prices;
 
 - (void)addPrice:(Price *)price;
 
+- (int)total;
+
 - (BOOL)isEqual:(id)other;
 
-- (BOOL)isEqualToTotal:(Total *)total;
+- (BOOL)isEqualToTotal:(Cart *)cart;
 
 - (NSUInteger)hash;
 

@@ -13,11 +13,12 @@
 #import "Scanner.h"
 #import "OCMock.h"
 #import "Price.h"
-#import "InMemoryScanner.h"
+#import "InMemoryScannerInput.h"
 #import "Command.h"
 #import "FinishCommand.h"
-#import "Total.h"
+#import "Cart.h"
 #import "CommandExecutor.h"
+#import "Cart.h"
 
 @interface PointOfSaleTest : XCTestCase
 @property id<Catalog> catalog;
@@ -26,7 +27,6 @@
 
 @implementation PointOfSaleTest {
   NSString *A_BARCODE;
-  NSString *ANOTHER_BARCODE;
   NSString *NOT_EXISTENT_BARCODE;
   Price *A_PRICE;
 }
@@ -34,7 +34,6 @@
 - (void)setUp {
   [super setUp];
   A_BARCODE = @"A_BARCODE";
-  ANOTHER_BARCODE = @"ANOTHER_BARCODE";
   NOT_EXISTENT_BARCODE = @"NOT_EXISTENT_BARCODE";
   A_PRICE = [[Price alloc] init];
 
@@ -44,7 +43,7 @@
 
 - (void)test_a_price_found {
   PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display];
-  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[A_BARCODE]];
+  InMemoryScannerInput *scanner = [InMemoryScannerInput scannerWithBarcodes:@[A_BARCODE]];
   CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
 
   [OCMStub([self.catalog findPrice: A_PRICE]) andReturn:nil];
@@ -55,7 +54,7 @@
 
 - (void)test_a_price_not_found {
   PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display];
-  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[NOT_EXISTENT_BARCODE]];
+  InMemoryScannerInput *scanner = [InMemoryScannerInput scannerWithBarcodes:@[NOT_EXISTENT_BARCODE]];
   CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
 
   [OCMStub([self.catalog findPrice: NOT_EXISTENT_BARCODE]) andReturn:nil];
@@ -65,21 +64,15 @@
 }
 
 - (void)test_total {
-
-  PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display];
-  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[]];
+  Cart *cart = OCMClassMock(Cart.class);
+  PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display andCart:cart];
+  InMemoryScannerInput *scanner = [InMemoryScannerInput scannerWithBarcodes:@[]];
   CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
 
+  [OCMStub(cart.total) andReturnValue:OCMOCK_VALUE(1)];
   [executor consume:scanner];
 
-  OCMVerify([self.display displayTotal: [Total totalWithPrices:@[]]]);
-}
-
--(void)test_command_executor {
-  PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display];
-  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[NOT_EXISTENT_BARCODE]];
-  CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
-  [executor consume: scanner];
+  OCMVerify([self.display displayTotal:1]);
 }
 
 

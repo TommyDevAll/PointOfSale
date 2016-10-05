@@ -7,4 +7,5 @@
 
 
 @interface Price : NSObject
+@property int value;
 @end

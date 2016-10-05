@@ -9,8 +9,13 @@
 #import "Controller.h"
 #import "BarcodeScannedCommand.h"
 
+@protocol Catalog;
+@protocol Display;
+@class Cart;
+
 
 @interface PointOfSale : Controller
 + (PointOfSale *)pointOfSaleWithCatalog:(id)catalog andDisplay:(id)display;
 
++ (PointOfSale *)pointOfSaleWithCatalog:(id <Catalog>)catalog andDisplay:(id <Display>)display andCart:(Cart *)cart;
 @end

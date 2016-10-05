@@ -8,14 +8,14 @@
 #import "Catalog.h"
 #import "FinishCommand.h"
 #import "Scanner.h"
-#import "Total.h"
+#import "Cart.h"
 #import "BarcodeScannedCommand.h"
 
 
 @interface PointOfSale ()
 @property(nonatomic, strong) id catalog;
 @property(nonatomic, strong) id display;
-@property(nonatomic, strong) Total *total;
+@property(nonatomic, strong) Cart *cart;
 @end
 
 @implementation PointOfSale
@@ -23,7 +23,15 @@
   PointOfSale *sale = [[PointOfSale alloc] init];
   sale.catalog = catalog;
   sale.display = display;
-  sale.total = [Total totalWithPrices:@[]];
+  sale.cart = [Cart cartWithPrices:@[]];
+  return sale;
+}
+
++ (PointOfSale *)pointOfSaleWithCatalog:(id <Catalog>)catalog andDisplay:(id <Display>)display andCart:(Cart *)cart {
+  PointOfSale *sale = [[PointOfSale alloc] init];
+  sale.catalog = catalog;
+  sale.display = display;
+  sale.cart = cart;
   return sale;
 }
 
@@ -37,12 +45,12 @@
 }
 
 - (void)priceFound:(Price *)price {
-  [self.total addPrice:price];
+  [self.cart addPrice:price];
   [self.display displayPriceFound:price];
 }
 
 -(void)executeFinishCommand:(FinishCommand *)command {
-  [self.display displayTotal:self.total];
+  [self.display displayTotal:self.cart.total];
 }
 
 - (void)execute:(Command *)command {

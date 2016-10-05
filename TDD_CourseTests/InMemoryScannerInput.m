@@ -3,18 +3,18 @@
 // Copyright (c) 2016 Tommaso Resti. All rights reserved.
 //
 
-#import "InMemoryScanner.h"
+#import "InMemoryScannerInput.h"
 #import "BarcodeScannedCommand.h"
 #import "FinishCommand.h"
 #import "PointOfSale.h"
 
 
-@interface InMemoryScanner ()
+@interface InMemoryScannerInput ()
 @property(nonatomic) NSMutableArray *barcodes;
 @property(nonatomic) BOOL terminated;
 @end
 
-@implementation InMemoryScanner
+@implementation InMemoryScannerInput
 - (instancetype)initWithBarcodes:(NSArray *)barcodes {
   self = [super init];
   if (self) {

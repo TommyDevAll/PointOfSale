@@ -7,7 +7,7 @@
 #import "Scanner.h"
 #import "Controller.h"
 #import "PointOfSale.h"
-#import "InMemoryScanner.h"
+#import "InMemoryScannerInput.h"
 
 
 @interface CommandExecutor ()

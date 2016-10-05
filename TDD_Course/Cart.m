@@ -3,17 +3,25 @@
 // Copyright (c) 2016 Tommaso Resti. All rights reserved.
 //
 
-#import "Total.h"
+#import "Cart.h"
 #import "Price.h"
 
 
-@interface Total ()
+@interface Cart ()
 @property(nonatomic, strong) NSMutableArray<Price *> *prices;
 @end
 
-@implementation Total {
+@implementation Cart {
 
 }
+
+-(instancetype)init {
+  if(self = [self initWithPrices:@[]]) {
+    ;
+  }
+  return self;
+}
+
 - (instancetype)initWithPrices:(NSArray *)prices {
   self = [super init];
   if (self) {
@@ -23,12 +31,19 @@
   return self;
 }
 
-+ (instancetype)totalWithPrices:(NSArray *)prices {
++ (instancetype)cartWithPrices:(NSArray<Price *> *)prices {
   return [[self alloc] initWithPrices:prices];
 }
 
 - (void)addPrice:(Price *)price {
   [self.prices addObject:price];
+}
+
+- (int)total {
+  int amount = 0;
+  for(Price *price in self.prices)
+    amount += price.value;
+  return amount;
 }
 
 - (BOOL)isEqual:(id)other {
@@ -40,12 +55,12 @@
   return [self isEqualToTotal:other];
 }
 
-- (BOOL)isEqualToTotal:(Total *)total {
-  if (self == total)
+- (BOOL)isEqualToTotal:(Cart *)cart {
+  if (self == cart)
     return YES;
-  if (total == nil)
+  if (cart == nil)
     return NO;
-  return !(self.prices != total.prices && ![self.prices isEqualToArray:total.prices]);
+  return !(self.prices != cart.prices && ![self.prices isEqualToArray:cart.prices]);
 }
 
 - (NSUInteger)hash {

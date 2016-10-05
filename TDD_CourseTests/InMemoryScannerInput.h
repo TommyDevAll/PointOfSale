@@ -9,7 +9,7 @@
 @class PointOfSale;
 @protocol BarcodeScannedCommandHandler;
 
-@interface InMemoryScanner : NSObject <Scanner>
+@interface InMemoryScannerInput : NSObject <Scanner>
 - (instancetype)initWithBarcodes:(NSArray *)barcodes;
 
 + (instancetype)scannerWithBarcodes:(NSArray *)barcodes;

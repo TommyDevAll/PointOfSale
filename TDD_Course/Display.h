@@ -6,10 +6,10 @@
 #import <Foundation/Foundation.h>
 
 @class Price;
-@class Total;
+@class Cart;
 
 @protocol Display <NSObject>
 - (void)displayPriceFound:(const Price *)price;
 - (void)displayPriceNotFound;
-- (void)displayTotal: (Total *)total;
+- (void)displayTotal: (int)total;
 @end

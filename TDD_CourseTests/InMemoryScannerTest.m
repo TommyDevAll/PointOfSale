@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "InMemoryScanner.h"
+#import "InMemoryScannerInput.h"
 #import "FinishCommand.h"
 #import "BarcodeScannedCommand.h"
 
@@ -24,7 +24,7 @@
 
 - (void)test_barcode_scanned_command {
   NSArray *aBarcode = @[@"a_barcode"];
-  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:aBarcode];
+  InMemoryScannerInput *scanner = [InMemoryScannerInput scannerWithBarcodes:aBarcode];
   XCTAssertTrue(scanner.hasNextCommand);
   Command *command = scanner.nextCommand;
   XCTAssertTrue([command isKindOfClass:[BarcodeScannedCommand class]]);
@@ -35,7 +35,7 @@
 
 - (void)test_finish_command {
   NSArray *noBarcodes = @[];
-  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:noBarcodes];
+  InMemoryScannerInput *scanner = [InMemoryScannerInput scannerWithBarcodes:noBarcodes];
   XCTAssertTrue(scanner.hasNextCommand);
   XCTAssertTrue([scanner.nextCommand isKindOfClass:[FinishCommand class]]);
 }

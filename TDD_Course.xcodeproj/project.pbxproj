@@ -12,14 +12,14 @@
 		CC68400AD5611361E6054B95 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684650A6C3AF9AB22836C3 /* Command.m */; };
 		CC6840142CBE4BEBC50AB563 /* FinishCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6844074E61C489EB253974 /* FinishCommand.m */; };
 		CC684050202C1AF48DF15A3E /* CommandExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* CommandExecutor.m */; };
-		CC68411E82E50FFF2FF25500 /* Total.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Total.m */; };
+		CC68411E82E50FFF2FF25500 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
 		CC6841B56E48A80E70AA41C0 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E485293A78559990218 /* Controller.m */; };
 		CC68430E27EE5A43F0BF62D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC6844BC56EC3CBE2EDDCB47 /* Info.plist */; };
 		CC6843407C116D020C22536A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC6847CDC7736164BA43437E /* Info.plist */; };
-		CC68453F98777651A6050AA8 /* Total.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Total.m */; };
+		CC68453F98777651A6050AA8 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
 		CC684659D11562B1847A56AD /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E485293A78559990218 /* Controller.m */; };
 		CC68465E5CA270DB213DB8C4 /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684879D25B28F4AD15C9D6 /* Price.m */; };
-		CC6846876CE2FAF5CB64FF67 /* InMemoryScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68408A8B84F6AC76DCF116 /* InMemoryScanner.m */; };
+		CC6846876CE2FAF5CB64FF67 /* InMemoryScannerInput.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68408A8B84F6AC76DCF116 /* InMemoryScannerInput.m */; };
 		CC6846E74389A31728C9961E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6843268715A612566CE82F /* ViewController.m */; };
 		CC68473BCDD75E4329D64B03 /* PointOfSale.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6840634B8E44043E24FF9B /* PointOfSale.m */; };
 		CC6847CC0AC9975755635A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC68436C224D0CAE0CA8F826 /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 		CC684BFCF1D289F598C8A5EF /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684650A6C3AF9AB22836C3 /* Command.m */; };
 		CC684C9F05B72CF3F4DB9BB9 /* InMemoryScannerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684221BC599E706740A00E /* InMemoryScannerTest.m */; };
 		CC684CFBB33ECC64C2AEB9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC684B0877DE0F0B0E369C07 /* LaunchScreen.storyboard */; };
-		CC684D07F7DA1AC4B7699BF4 /* Total.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Total.m */; };
+		CC684D07F7DA1AC4B7699BF4 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
 		CC684D881E712449688568DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684DAA30AAA5264FA0C0E8 /* AppDelegate.m */; };
 		CC684D9132536A9D149A22BB /* BarcodeScannedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684BB3907719E3B7040734 /* BarcodeScannedCommand.m */; };
 		CC684E4C22495E0852DD8AC3 /* PointOfSale.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6840634B8E44043E24FF9B /* PointOfSale.m */; };
@@ -74,9 +74,9 @@
 		8DA85BE43CE5550A1A4D822B /* Pods-TDD_CourseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDD_CourseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDD_CourseTests/Pods-TDD_CourseTests.release.xcconfig"; sourceTree = "<group>"; };
 		94794ACED823556A8C404311 /* Pods-TDD_CourseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDD_CourseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDD_CourseTests/Pods-TDD_CourseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB686F3DF67A118CE7A90CC7 /* libPods-TDD_CourseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDD_CourseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC6840519CE735DB2F949FB5 /* InMemoryScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMemoryScanner.h; sourceTree = "<group>"; };
+		CC6840519CE735DB2F949FB5 /* InMemoryScannerInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMemoryScannerInput.h; sourceTree = "<group>"; };
 		CC6840634B8E44043E24FF9B /* PointOfSale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfSale.m; sourceTree = "<group>"; };
-		CC68408A8B84F6AC76DCF116 /* InMemoryScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InMemoryScanner.m; sourceTree = "<group>"; };
+		CC68408A8B84F6AC76DCF116 /* InMemoryScannerInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InMemoryScannerInput.m; sourceTree = "<group>"; };
 		CC6840BD7FDDCF0F1CCD3E1D /* Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input.h; sourceTree = "<group>"; };
 		CC6841610274E1680420247E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC68416605158EBEBF000813 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		CC6843268715A612566CE82F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CC68436C224D0CAE0CA8F826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC6843CC4015AA898AAAEECE /* FinishCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishCommand.h; sourceTree = "<group>"; };
-		CC6844055CFC9D9ED7FFFB52 /* Total.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Total.h; sourceTree = "<group>"; };
+		CC6844055CFC9D9ED7FFFB52 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
 		CC6844074E61C489EB253974 /* FinishCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishCommand.m; sourceTree = "<group>"; };
 		CC6844B07161BF260938E395 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC6844BC56EC3CBE2EDDCB47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		CC6848246E2173438CCD71B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC68482FADF4FFF688E5CAE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC684879D25B28F4AD15C9D6 /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
-		CC684A763289D51E1A98C13A /* Total.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Total.m; sourceTree = "<group>"; };
+		CC684A763289D51E1A98C13A /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
 		CC684B1B487B528F0E49FDAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CC684BB3907719E3B7040734 /* BarcodeScannedCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedCommand.m; sourceTree = "<group>"; };
 		CC684C4B5E36440E31DC0C2F /* TDD_Course_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD_Course_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,8 +185,8 @@
 				CC6844074E61C489EB253974 /* FinishCommand.m */,
 				CC6843CC4015AA898AAAEECE /* FinishCommand.h */,
 				CC684547E4427A3DE60CFD2F /* Scanner.h */,
-				CC684A763289D51E1A98C13A /* Total.m */,
-				CC6844055CFC9D9ED7FFFB52 /* Total.h */,
+				CC684A763289D51E1A98C13A /* Cart.m */,
+				CC6844055CFC9D9ED7FFFB52 /* Cart.h */,
 				CC684BB3907719E3B7040734 /* BarcodeScannedCommand.m */,
 				CC684D3165A6293DCE4D9DDD /* BarcodeScannedCommand.h */,
 				CC68462FF873E4092EEEC553 /* CommandExecutor.m */,
@@ -205,8 +205,8 @@
 				CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */,
 				CC684879D25B28F4AD15C9D6 /* Price.m */,
 				CC6841A9D7E577491E22388F /* Price.h */,
-				CC68408A8B84F6AC76DCF116 /* InMemoryScanner.m */,
-				CC6840519CE735DB2F949FB5 /* InMemoryScanner.h */,
+				CC68408A8B84F6AC76DCF116 /* InMemoryScannerInput.m */,
+				CC6840519CE735DB2F949FB5 /* InMemoryScannerInput.h */,
 				CC684221BC599E706740A00E /* InMemoryScannerTest.m */,
 			);
 			path = TDD_CourseTests;
@@ -420,7 +420,7 @@
 				CC684BF444093915742A2326 /* Price.m in Sources */,
 				CC68400AD5611361E6054B95 /* Command.m in Sources */,
 				CC6848A3599FA4332C1B4296 /* FinishCommand.m in Sources */,
-				CC684D07F7DA1AC4B7699BF4 /* Total.m in Sources */,
+				CC684D07F7DA1AC4B7699BF4 /* Cart.m in Sources */,
 				CC68494C146F089827CE877F /* BarcodeScannedCommand.m in Sources */,
 				CC684050202C1AF48DF15A3E /* CommandExecutor.m in Sources */,
 				CC684659D11562B1847A56AD /* Controller.m in Sources */,
@@ -438,7 +438,7 @@
 				CC6847FEC51D644DBEFF7266 /* Price.m in Sources */,
 				CC684BFCF1D289F598C8A5EF /* Command.m in Sources */,
 				CC68481C9E814AA4C99E0485 /* FinishCommand.m in Sources */,
-				CC68453F98777651A6050AA8 /* Total.m in Sources */,
+				CC68453F98777651A6050AA8 /* Cart.m in Sources */,
 				CC684D9132536A9D149A22BB /* BarcodeScannedCommand.m in Sources */,
 				CC684F64B01D3AE2734D34AF /* CommandExecutor.m in Sources */,
 				CC684F0A3656286738A93143 /* Controller.m in Sources */,
@@ -452,10 +452,10 @@
 				CC68497D24542FA95CBBFD5B /* PointOfSale.m in Sources */,
 				CC684A8770118EE991D7E520 /* PointOfSaleTest.m in Sources */,
 				CC68465E5CA270DB213DB8C4 /* Price.m in Sources */,
-				CC6846876CE2FAF5CB64FF67 /* InMemoryScanner.m in Sources */,
+				CC6846876CE2FAF5CB64FF67 /* InMemoryScannerInput.m in Sources */,
 				CC6848CC472717E998005C82 /* Command.m in Sources */,
 				CC6840142CBE4BEBC50AB563 /* FinishCommand.m in Sources */,
-				CC68411E82E50FFF2FF25500 /* Total.m in Sources */,
+				CC68411E82E50FFF2FF25500 /* Cart.m in Sources */,
 				CC684E89D94D64B90B66A87B /* BarcodeScannedCommand.m in Sources */,
 				CC684A9790783F34786D7BCA /* CommandExecutor.m in Sources */,
 				CC6841B56E48A80E70AA41C0 /* Controller.m in Sources */,

@@ -4,10 +4,8 @@
 //
 
 #import "Price.h"
-#import "Total.h"
+#import "Cart.h"
 
 
-@implementation Price {
-
-}
+@implementation Price
 @end
