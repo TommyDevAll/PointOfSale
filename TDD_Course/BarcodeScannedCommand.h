@@ -5,14 +5,9 @@
 
 #import <Foundation/Foundation.h>
 #import "Command.h"
-#import "FinishCommand.h"
-
-@protocol BarcodeScannedCommandHandler <FinishCommandHandler>
--(void)onBarcodeScanned:(NSString *)barcodeScanned;
-@end
 
 @interface BarcodeScannedCommand : Command
 @property(nonatomic, copy) NSString *barcode;
 
-+ (instancetype)barcodeScannedWithBarcode:(NSString *)text andHandler:(id<BarcodeScannedCommandHandler>)handler;
++ (instancetype)barcodeScannedWithBarcode:(NSString *)barcode;
 @end

@@ -6,13 +6,6 @@
 #import "Command.h"
 
 
-@implementation Command {
-
-}
-
-- (Command *)execute {
-  return nil;
-}
-
+@implementation Command
 
 @end

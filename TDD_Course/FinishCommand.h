@@ -6,14 +6,6 @@
 #import <Foundation/Foundation.h>
 #import "Command.h"
 
-@protocol FinishCommandHandler <NSObject>
--(void)onFinishCommand;
-@end
-
 @interface FinishCommand : Command
-- (instancetype)initWithHandler:(id <FinishCommandHandler>)handler;
-
-+ (instancetype)commandWithHandler:(id <FinishCommandHandler>)handler;
-
 
 @end

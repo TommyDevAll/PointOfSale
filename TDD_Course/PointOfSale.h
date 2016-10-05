@@ -10,7 +10,7 @@
 #import "BarcodeScannedCommand.h"
 
 
-@interface PointOfSale : NSObject <BarcodeScannedCommandHandler>
+@interface PointOfSale : Controller
 + (PointOfSale *)pointOfSaleWithCatalog:(id)catalog andDisplay:(id)display;
 
 @end

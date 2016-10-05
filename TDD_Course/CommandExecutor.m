@@ -11,12 +11,30 @@
 
 
 @interface CommandExecutor ()
+@property(nonatomic, strong) Controller* controller;
 @end
 
+
+
 @implementation CommandExecutor
+
+- (instancetype)initWithController:(Controller *)controller {
+  self = [super init];
+  if (self) {
+    self.controller = controller;
+  }
+
+  return self;
+}
+
++ (instancetype)executorWithController:(Controller *)controller {
+  return [[self alloc] initWithController:controller];
+}
+
+
 - (void)consume:(id<Input>)input {
   while(input.hasNextCommand) {
-    [input.nextCommand execute];
+    [self.controller execute: input.nextCommand];
   }
 }
 @end

@@ -27,17 +27,8 @@
   return sale;
 }
 
-- (void)priceFound:(Price *)price {
-  [self.total addPrice:price];
-  [self.display displayPriceFound:price];
-}
-
--(void)onFinishCommand {
-  [self.display displayTotal:self.total];
-}
-
-- (void)onBarcodeScanned:(NSString *)barcodeScanned {
-  Price *price = [self.catalog findPrice:barcodeScanned];
+- (void)executeScannerCommand:(BarcodeScannedCommand *)command {
+  Price *price = [self.catalog findPrice:command.barcode];
   if(price) {
     [self priceFound:price];
   }
@@ -45,5 +36,22 @@
     [self.display displayPriceNotFound];
 }
 
+- (void)priceFound:(Price *)price {
+  [self.total addPrice:price];
+  [self.display displayPriceFound:price];
+}
+
+-(void)executeFinishCommand:(FinishCommand *)command {
+  [self.display displayTotal:self.total];
+}
+
+- (void)execute:(Command *)command {
+  if([command isKindOfClass:[FinishCommand class]]) {
+    [self executeFinishCommand:(FinishCommand *) command];
+  }
+  else if([command isKindOfClass:[BarcodeScannedCommand class]]) {
+    [self executeScannerCommand:(BarcodeScannedCommand *) command];
+  }
+}
 
 @end

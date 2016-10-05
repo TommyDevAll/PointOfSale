@@ -5,22 +5,13 @@
 
 #import "BarcodeScannedCommand.h"
 
-
-@interface BarcodeScannedCommand ()
-@property(nonatomic, strong) id <BarcodeScannedCommandHandler> handler;
-@end
-
 @implementation BarcodeScannedCommand
 
-+ (instancetype)barcodeScannedWithBarcode:(NSString *)text andHandler:(id <BarcodeScannedCommandHandler>)handler {
++ (instancetype)barcodeScannedWithBarcode:(NSString *)barcode {
   BarcodeScannedCommand *command = [BarcodeScannedCommand new];
-  command.barcode = text;
-  command.handler = handler;
+  command.barcode = barcode;
   return command;
 }
 
--(void) execute {
-  [self.handler onBarcodeScanned:self.barcode];
-}
 
 @end

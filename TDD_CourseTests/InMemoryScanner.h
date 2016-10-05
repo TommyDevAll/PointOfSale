@@ -10,6 +10,7 @@
 @protocol BarcodeScannedCommandHandler;
 
 @interface InMemoryScanner : NSObject <Scanner>
-- (instancetype)initWithBarcodes:(NSArray *)barcodes andScanHandler:(id <BarcodeScannedCommandHandler>)handler;
-+ (instancetype)scannerWithBarcodes:(NSArray *)barcodes andScanHandler:(PointOfSale *)handler;
+- (instancetype)initWithBarcodes:(NSArray *)barcodes;
+
++ (instancetype)scannerWithBarcodes:(NSArray *)barcodes;
 @end

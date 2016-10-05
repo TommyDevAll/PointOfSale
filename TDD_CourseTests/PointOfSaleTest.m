@@ -44,8 +44,8 @@
 
 - (void)test_a_price_found {
   PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display];
-  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[A_BARCODE] andScanHandler:pointOfSale];
-  CommandExecutor *executor = [CommandExecutor new];
+  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[A_BARCODE]];
+  CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
 
   [OCMStub([self.catalog findPrice: A_PRICE]) andReturn:nil];
   [executor consume:scanner];
@@ -55,8 +55,8 @@
 
 - (void)test_a_price_not_found {
   PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display];
-  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[NOT_EXISTENT_BARCODE] andScanHandler:pointOfSale];
-  CommandExecutor *executor = [CommandExecutor new];
+  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[NOT_EXISTENT_BARCODE]];
+  CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
 
   [OCMStub([self.catalog findPrice: NOT_EXISTENT_BARCODE]) andReturn:nil];
   [executor consume:scanner];
@@ -67,9 +67,9 @@
 - (void)test_total {
 
   PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display];
-  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[] andScanHandler: pointOfSale];
+  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[]];
+  CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
 
-  CommandExecutor *executor = [CommandExecutor new];
   [executor consume:scanner];
 
   OCMVerify([self.display displayTotal: [Total totalWithPrices:@[]]]);
@@ -77,8 +77,8 @@
 
 -(void)test_command_executor {
   PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display];
-  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[NOT_EXISTENT_BARCODE] andScanHandler:pointOfSale];
-  CommandExecutor *executor = [CommandExecutor new];
+  InMemoryScanner *scanner = [InMemoryScanner scannerWithBarcodes:@[NOT_EXISTENT_BARCODE]];
+  CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
   [executor consume: scanner];
 }
 

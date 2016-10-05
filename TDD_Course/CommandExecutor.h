@@ -6,8 +6,13 @@
 #import <Foundation/Foundation.h>
 
 @protocol Input;
+@class Controller;
 
 
 @interface CommandExecutor : NSObject
+- (instancetype)initWithController:(Controller *)controller;
+
++ (instancetype)executorWithController:(Controller *)controller;
+
 - (void)consume:(id<Input>)input;
 @end
