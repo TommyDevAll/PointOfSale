@@ -12,14 +12,13 @@
 #import "Display.h"
 #import "Scanner.h"
 #import "OCMock.h"
-#import "Price.h"
 #import "InMemoryScannerInput.h"
-#import "Command.h"
 #import "FinishCommand.h"
 #import "Cart.h"
 #import "CommandExecutor.h"
-#import "Cart.h"
 #import "TestInputProvider.h"
+#import "BarcodeScannedOperation.h"
+#import "FinishOperation.h"
 
 @interface PointOfSaleTest : XCTestCase
 @property id<Catalog> catalog;
@@ -43,7 +42,12 @@
 }
 
 - (void)test_a_price_found {
-  PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display];
+  Cart *cart = [Cart new];
+  NSDictionary *operations = @{
+      BarcodeScannedCommand.class: [BarcodeScannedOperation operationWithCatalog:self.catalog cart: cart andDisplay:self.display]
+  };
+
+  PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithOperations: operations];
   InMemoryScannerInput *scanner = [InMemoryScannerInput scannerWithBarcodes:@[A_BARCODE]];
   CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
 
@@ -54,7 +58,12 @@
 }
 
 - (void)test_a_price_not_found {
-  PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display];
+  Cart *cart = [Cart new];
+  NSDictionary *operations = @{
+      BarcodeScannedCommand.class: [BarcodeScannedOperation operationWithCatalog:self.catalog cart: cart andDisplay:self.display]
+  };
+
+  PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithOperations: operations];
   InMemoryScannerInput *scanner = [InMemoryScannerInput scannerWithBarcodes:@[NOT_EXISTENT_BARCODE]];
   CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
 
@@ -66,10 +75,31 @@
 
 - (void)test_total {
   Cart *cart = OCMClassMock(Cart.class);
-  PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithCatalog:self.catalog andDisplay:self.display andCart:cart];
+  NSDictionary *operations = @{
+      FinishCommand.class: [FinishOperation operationWithCart: cart andDisplay: self.display]
+  };
+
+  PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithOperations: operations];
   id<Input> inputProvider = [TestInputProvider providerWithCommands:@[
       [FinishCommand new]
   ]];
+  CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
+
+  [OCMStub(cart.total) andReturnValue:OCMOCK_VALUE(1)];
+  [executor consume:inputProvider];
+
+  OCMVerify([self.display displayTotal:1]);
+}
+
+- (void) test_operations {
+  Cart *cart = OCMClassMock(Cart.class);
+
+  NSDictionary *operations = @{
+      FinishCommand.class: [FinishOperation operationWithCart: cart andDisplay: self.display]
+  };
+
+  PointOfSale *pointOfSale = [PointOfSale pointOfSaleWithOperations: operations];
+  id<Input> inputProvider = [TestInputProvider providerWithCommands:@[[FinishCommand new]]];
   CommandExecutor *executor = [CommandExecutor executorWithController:pointOfSale];
 
   [OCMStub(cart.total) andReturnValue:OCMOCK_VALUE(1)];
