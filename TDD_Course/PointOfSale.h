@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Command.h"
+#import "commands/Command.h"
 #import "Controller.h"
 #import "BarcodeScannedCommand.h"
 

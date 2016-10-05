@@ -11,8 +11,8 @@
 #import "Cart.h"
 #import "BarcodeScannedCommand.h"
 #import "Operation.h"
-#import "FinishOperation.h"
-#import "BarcodeScannedOperation.h"
+#import "operations/FinishOperation.h"
+#import "operations/BarcodeScannedOperation.h"
 
 @interface PointOfSale ()
 @property(nonatomic, strong) id catalog;
@@ -50,8 +50,8 @@
 #pragma mark - Controller
 
 - (void)execute:(Command *)command {
-  [self.operations[command.class] run: command];
-
+  id<Operation> operation = self.operations[command.class];
+  [operation run:command];
 }
 
 @end

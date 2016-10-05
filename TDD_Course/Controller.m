@@ -4,7 +4,7 @@
 //
 
 #import "Controller.h"
-#import "Command.h"
+#import "commands/Command.h"
 
 
 @implementation Controller {
