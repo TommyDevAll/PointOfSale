@@ -100,6 +100,7 @@
 		CC6848246E2173438CCD71B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC68482FADF4FFF688E5CAE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC684879D25B28F4AD15C9D6 /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
+		CC68495DF32069130BFED373 /* Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operation.h; sourceTree = "<group>"; };
 		CC684A763289D51E1A98C13A /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
 		CC684B1B487B528F0E49FDAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CC684BB3907719E3B7040734 /* BarcodeScannedCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedCommand.m; sourceTree = "<group>"; };
@@ -194,6 +195,7 @@
 				CC684E485293A78559990218 /* Controller.m */,
 				CC68416605158EBEBF000813 /* Controller.h */,
 				CC6840BD7FDDCF0F1CCD3E1D /* Input.h */,
+				CC68495DF32069130BFED373 /* Operation.h */,
 			);
 			path = TDD_Course;
 			sourceTree = "<group>";
