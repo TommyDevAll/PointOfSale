@@ -10,7 +10,7 @@
 
 
 @interface InMemoryScanner ()
-@property(nonatomic) NSMutableArray *lines;
+@property(nonatomic) NSMutableArray *barcodes;
 @property(nonatomic) BOOL terminated;
 @property(nonatomic, strong) id <BarcodeScannedCommandHandler> handler;
 @end
@@ -19,7 +19,7 @@
 - (instancetype)initWithBarcodes:(NSArray *)barcodes andScanHandler:(id <BarcodeScannedCommandHandler>)handler {
   self = [super init];
   if (self) {
-    self.lines = [barcodes mutableCopy];
+    self.barcodes = [barcodes mutableCopy];
     self.handler = handler;
   }
   return self;
@@ -30,18 +30,18 @@
 }
 
 - (BOOL)hasNextCommand {
-  return self.lines.count > 0 || !self.terminated;
+  return self.barcodes.count > 0 || !self.terminated;
 }
 
 - (Command *)nextCommand {
   Command *command;
-  if(self.lines.count == 0) {
+  if(self.barcodes.count == 0) {
     self.terminated = TRUE;
-    [self.handler onFinishCommand];
+    command = [FinishCommand commandWithHandler:self.handler];
   }
   else {
-    [self.handler onBarcodeScanned:self.lines[0]];
-    [self.lines removeObjectAtIndex:0];
+    command = [BarcodeScannedCommand barcodeScannedWithBarcode:self.barcodes[0] andHandler:self.handler];
+    [self.barcodes removeObjectAtIndex:0];
   }
   return command;
 }

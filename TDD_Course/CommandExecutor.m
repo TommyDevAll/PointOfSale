@@ -11,19 +11,9 @@
 
 
 @interface CommandExecutor ()
-@property(nonatomic, strong) Controller *controller;
 @end
 
-@implementation CommandExecutor {
-
-}
-
-+ (CommandExecutor *)executorWithController:(Controller *)controller {
-  CommandExecutor *executor = [CommandExecutor new];
-  executor.controller = controller;
-  return executor;
-}
-
+@implementation CommandExecutor
 - (void)consume:(id<Input>)input {
   while(input.hasNextCommand) {
     [input.nextCommand execute];

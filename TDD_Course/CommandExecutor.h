@@ -5,7 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class Controller;
 @protocol Input;
 
 
