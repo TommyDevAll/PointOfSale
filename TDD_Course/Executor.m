@@ -3,16 +3,16 @@
 // Copyright (c) 2016 Tommaso Resti. All rights reserved.
 //
 
-#import "PointOfSaleExecutor.h"
+#import "Executor.h"
 #import "Scanner.h"
 #import "controllers/Controller.h"
 
 
-@interface PointOfSaleExecutor ()
+@interface Executor ()
 @property(nonatomic, strong) Controller* controller;
 @end
 
-@implementation PointOfSaleExecutor
+@implementation Executor
 
 - (instancetype)initWithController:(Controller *)controller {
   self = [super init];

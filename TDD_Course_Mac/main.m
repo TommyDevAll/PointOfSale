@@ -10,7 +10,7 @@
 #import "FinishCommand.h"
 #import "BarcodeScannedCommand.h"
 #import "TestInputProvider.h"
-#import "PointOfSaleExecutor.h"
+#import "Executor.h"
 #import "PointOfSaleController.h"
 #import "FinishOperation.h"
 #import "BarcodeScannedOperation.h"
@@ -38,7 +38,7 @@ void runPointOfSale() {
   BarcodeScannedOperation *scanOperation = [BarcodeScannedOperation operationWithCatalog:catalog cart:cart andDisplay:display];
   FinishOperation *finishOperation = [FinishOperation operationWithCart:cart andDisplay:display];
   Controller *controller = [PointOfSaleController controllerWithScanOperation:scanOperation andCheckoutOperation:finishOperation];
-  PointOfSaleExecutor *executor = [PointOfSaleExecutor executorWithController:controller];
+  Executor *executor = [Executor executorWithController:controller];
 
   id <Input> provider = [TestInputProvider providerWithCommands:@[
       [BarcodeScannedCommand barcodeScannedWithBarcode:@"12345"],

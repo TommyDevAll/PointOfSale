@@ -9,7 +9,7 @@
 @class Controller;
 
 
-@interface PointOfSaleExecutor : NSObject
+@interface Executor : NSObject
 - (instancetype)initWithController:(Controller *)controller;
 
 + (instancetype)executorWithController:(Controller *)controller;

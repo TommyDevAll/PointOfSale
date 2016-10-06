@@ -10,7 +10,7 @@
 #import "Scanner.h"
 #import "OCMock.h"
 #import "FinishCommand.h"
-#import "PointOfSaleExecutor.h"
+#import "Executor.h"
 #import "TestInputProvider.h"
 #import "BarcodeScannedOperation.h"
 #import "FinishOperation.h"
@@ -32,7 +32,7 @@
   PointOfSaleController *pointOfSale = [PointOfSaleController controllerWithScanOperation:scannedOperation andCheckoutOperation: nil];
   BarcodeScannedCommand *scannedCommand = [BarcodeScannedCommand barcodeScannedWithBarcode:@"::a barcode::"];
   id<Input> inputProvider = [TestInputProvider providerWithCommands:@[scannedCommand]];
-  PointOfSaleExecutor *executor = [PointOfSaleExecutor executorWithController:pointOfSale];
+  Executor *executor = [Executor executorWithController:pointOfSale];
 
   [executor consume:inputProvider];
 
@@ -45,7 +45,7 @@
   PointOfSaleController *pointOfSale = [PointOfSaleController controllerWithScanOperation:scannedOperation andCheckoutOperation: finishOperation];
   Command *finishCommand = [FinishCommand new];
   id<Input> inputProvider = [TestInputProvider providerWithCommands:@[finishCommand]];
-  PointOfSaleExecutor *executor = [PointOfSaleExecutor executorWithController:pointOfSale];
+  Executor *executor = [Executor executorWithController:pointOfSale];
 
   [executor consume:inputProvider];
 

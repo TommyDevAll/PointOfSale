@@ -10,7 +10,7 @@
 		0996554E1DA4EB2E000D0CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996554D1DA4EB2E000D0CC7 /* main.m */; };
 		2921574549FC3DB79AED2706 /* libPods-TDD_CourseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB686F3DF67A118CE7A90CC7 /* libPods-TDD_CourseTests.a */; };
 		CC68403F8FA7DA04DFCA9DCB /* PointOfSaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6841ACAA9E054822EE8043 /* PointOfSaleController.m */; };
-		CC684050202C1AF48DF15A3E /* PointOfSaleExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* PointOfSaleExecutor.m */; };
+		CC684050202C1AF48DF15A3E /* Executor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* Executor.m */; };
 		CC6840B518FE8F3E11709968 /* BarcodeScannedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A33BD98105112BD9435 /* BarcodeScannedCommand.m */; };
 		CC6840F224D1E32910C41794 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6846E39F34D085DB15E264 /* Command.m */; };
 		CC68411E82E50FFF2FF25500 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
@@ -39,7 +39,7 @@
 		CC684A0E78E1261538DE8E2A /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845103A5D2E5BCF437C02 /* Controller.m */; };
 		CC684A19CF9814D040EA1D94 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845103A5D2E5BCF437C02 /* Controller.m */; };
 		CC684A8770118EE991D7E520 /* PointOfSaleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */; };
-		CC684A9790783F34786D7BCA /* PointOfSaleExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* PointOfSaleExecutor.m */; };
+		CC684A9790783F34786D7BCA /* Executor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* Executor.m */; };
 		CC684B1233BBCF88D5F2646F /* TestInputProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684F8C0817582B31612373 /* TestInputProvider.m */; };
 		CC684B8CC629A4F3C320AFFA /* BarcodeScannedOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */; };
 		CC684C5437505A575DBE2AAC /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Item.m */; };
@@ -54,7 +54,7 @@
 		CC684DFA24CEAC8784B51482 /* InMemoryCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68473E40A929D9616A1667 /* InMemoryCatalog.m */; };
 		CC684EF9A3568314FC10ED3E /* BarcodeScannedCommandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684ED0FDD4E2CF844C20E4 /* BarcodeScannedCommandTest.m */; };
 		CC684F318B62752C08DDF299 /* BarcodeScannedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A33BD98105112BD9435 /* BarcodeScannedCommand.m */; };
-		CC684F64B01D3AE2734D34AF /* PointOfSaleExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* PointOfSaleExecutor.m */; };
+		CC684F64B01D3AE2734D34AF /* Executor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* Executor.m */; };
 		CC684FAEBDC64AC38B103441 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Item.m */; };
 		CC684FD6671F5A0F703B74F8 /* FinishOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68417488694B4D32E7AA10 /* FinishOperation.m */; };
 /* End PBXBuildFile section */
@@ -109,7 +109,7 @@
 		CC684547E4427A3DE60CFD2F /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
 		CC68457D2A294BB780CF907E /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
 		CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfSaleTest.m; sourceTree = "<group>"; };
-		CC68462FF873E4092EEEC553 /* PointOfSaleExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfSaleExecutor.m; sourceTree = "<group>"; };
+		CC68462FF873E4092EEEC553 /* Executor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Executor.m; sourceTree = "<group>"; };
 		CC6846E39F34D085DB15E264 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
 		CC68473E40A929D9616A1667 /* InMemoryCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InMemoryCatalog.m; sourceTree = "<group>"; };
 		CC6847705F0A2E7B37CCCDB3 /* FinishOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishOperationTest.m; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		CC684DAA30AAA5264FA0C0E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedOperationTest.m; sourceTree = "<group>"; };
 		CC684E8A4D89956827621CBD /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
-		CC684EA3A42E7113672C6B01 /* PointOfSaleExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointOfSaleExecutor.h; sourceTree = "<group>"; };
+		CC684EA3A42E7113672C6B01 /* Executor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Executor.h; sourceTree = "<group>"; };
 		CC684ED0FDD4E2CF844C20E4 /* BarcodeScannedCommandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedCommandTest.m; sourceTree = "<group>"; };
 		CC684EE1D0B14E44AA8EF0CD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CC684F8C0817582B31612373 /* TestInputProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInputProvider.m; sourceTree = "<group>"; };
@@ -220,8 +220,8 @@
 				CC684547E4427A3DE60CFD2F /* Scanner.h */,
 				CC684A763289D51E1A98C13A /* Cart.m */,
 				CC6844055CFC9D9ED7FFFB52 /* Cart.h */,
-				CC68462FF873E4092EEEC553 /* PointOfSaleExecutor.m */,
-				CC684EA3A42E7113672C6B01 /* PointOfSaleExecutor.h */,
+				CC68462FF873E4092EEEC553 /* Executor.m */,
+				CC684EA3A42E7113672C6B01 /* Executor.h */,
 				CC6840BD7FDDCF0F1CCD3E1D /* Input.h */,
 				CC684BF601A35627DAD2C878 /* operations */,
 				CC684A39A2267B3DA0F8399A /* commands */,
@@ -512,7 +512,7 @@
 			files = (
 				0996554E1DA4EB2E000D0CC7 /* main.m in Sources */,
 				CC684D07F7DA1AC4B7699BF4 /* Cart.m in Sources */,
-				CC684050202C1AF48DF15A3E /* PointOfSaleExecutor.m in Sources */,
+				CC684050202C1AF48DF15A3E /* Executor.m in Sources */,
 				CC6848BA0CD6CCA4F2D82609 /* BarcodeScannedOperation.m in Sources */,
 				CC684D687AA54C4D99ACD268 /* FinishOperation.m in Sources */,
 				CC684877A63698609F21A004 /* BarcodeScannedCommand.m in Sources */,
@@ -533,7 +533,7 @@
 				CC68489621DF39E86E3A3DAA /* main.m in Sources */,
 				CC684D881E712449688568DC /* AppDelegate.m in Sources */,
 				CC68453F98777651A6050AA8 /* Cart.m in Sources */,
-				CC684F64B01D3AE2734D34AF /* PointOfSaleExecutor.m in Sources */,
+				CC684F64B01D3AE2734D34AF /* Executor.m in Sources */,
 				CC6843E4ABA005A78697D150 /* BarcodeScannedOperation.m in Sources */,
 				CC684FD6671F5A0F703B74F8 /* FinishOperation.m in Sources */,
 				CC684F318B62752C08DDF299 /* BarcodeScannedCommand.m in Sources */,
@@ -554,7 +554,7 @@
 			files = (
 				CC684A8770118EE991D7E520 /* PointOfSaleTest.m in Sources */,
 				CC68411E82E50FFF2FF25500 /* Cart.m in Sources */,
-				CC684A9790783F34786D7BCA /* PointOfSaleExecutor.m in Sources */,
+				CC684A9790783F34786D7BCA /* Executor.m in Sources */,
 				CC68455577CEDCFA5EEE66FE /* BarcodeScannedOperation.m in Sources */,
 				CC6843931F5DD3D416AEADF0 /* FinishOperation.m in Sources */,
 				CC6840B518FE8F3E11709968 /* BarcodeScannedCommand.m in Sources */,

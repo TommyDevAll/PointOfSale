@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class PointOfSaleExecutor;
+@class Executor;
 
 
 @interface ViewController : UIViewController

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "PointOfSaleExecutor.h"
+#import "Executor.h"
 #import "PointOfSaleController.h"
 #import "BarcodeScannedOperation.h"
 #import "Cart.h"
@@ -38,7 +38,7 @@
 
 @interface ViewController ()
 
-@property(nonatomic, strong) PointOfSaleExecutor *executor;
+@property(nonatomic, strong) Executor *executor;
 @end
 
 @implementation ViewController
@@ -52,7 +52,7 @@
     BarcodeScannedOperation *scanOperation = [BarcodeScannedOperation operationWithCatalog:catalog cart:cart andDisplay:display];
     FinishOperation *finishOperation = [FinishOperation operationWithCart:cart andDisplay:display];
     Controller *controller = [PointOfSaleController controllerWithScanOperation:scanOperation andCheckoutOperation:finishOperation];
-    self.executor = [PointOfSaleExecutor executorWithController:controller];
+    self.executor = [Executor executorWithController:controller];
 
     id <Input> provider = [TestInputProvider providerWithCommands:@[
         [BarcodeScannedCommand barcodeScannedWithBarcode:@"12345"],
