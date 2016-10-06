@@ -12,8 +12,6 @@
 @property(nonatomic, strong) Controller* controller;
 @end
 
-
-
 @implementation PointOfSaleExecutor
 
 - (instancetype)initWithController:(Controller *)controller {
