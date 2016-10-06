@@ -5,11 +5,11 @@
 
 #import <Foundation/Foundation.h>
 
-@class Price;
+@class Item;
 @class Cart;
 
 @protocol Display <NSObject>
-- (void)displayPriceFound:(const Price *)price;
-- (void)displayPriceNotFound;
+- (void)displayItemFound:(const Item *)item;
+- (void)displayItemNotFound;
 - (void)displayTotal: (int)total;
 @end

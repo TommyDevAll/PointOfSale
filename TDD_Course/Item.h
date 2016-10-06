@@ -6,6 +6,8 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Price : NSObject
-@property int value;
+@interface Item : NSObject
+@property int cents;
+
++ (id)priceWithValue:(int)cents;
 @end

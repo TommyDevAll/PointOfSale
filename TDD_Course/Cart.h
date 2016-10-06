@@ -5,14 +5,14 @@
 
 #import <Foundation/Foundation.h>
 
-@class Price;
+@class Item;
 
 @interface Cart : NSObject
-- (instancetype)initWithPrices:(NSArray<Price *> *)prices;
+- (instancetype)initWithPrices:(NSArray<Item *> *)prices;
 
-+ (instancetype)cartWithPrices:(NSArray<Price *> *)prices;
++ (instancetype)cartWithPrices:(NSArray<Item *> *)prices;
 
-- (void)addPrice:(Price *)price;
+- (void)addPrice:(Item *)price;
 
 - (int)total;
 

@@ -4,11 +4,11 @@
 //
 
 #import "Cart.h"
-#import "Price.h"
+#import "Item.h"
 
 
 @interface Cart ()
-@property(nonatomic, strong) NSMutableArray<Price *> *prices;
+@property(nonatomic, strong) NSMutableArray<Item *> *prices;
 @end
 
 @implementation Cart {
@@ -31,18 +31,18 @@
   return self;
 }
 
-+ (instancetype)cartWithPrices:(NSArray<Price *> *)prices {
++ (instancetype)cartWithPrices:(NSArray<Item *> *)prices {
   return [[self alloc] initWithPrices:prices];
 }
 
-- (void)addPrice:(Price *)price {
+- (void)addPrice:(Item *)price {
   [self.prices addObject:price];
 }
 
 - (int)total {
   int amount = 0;
-  for(Price *price in self.prices)
-    amount += price.value;
+  for(Item *price in self.prices)
+    amount += price.cents;
   return amount;
 }
 

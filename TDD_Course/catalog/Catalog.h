@@ -4,8 +4,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Price.h"
+#import "Item.h"
 
 @protocol Catalog <NSObject>
-- (Price *)findPrice:(const NSString *)barcode;
+- (Item *)findPrice:(const NSString *)barcode;
 @end

@@ -23,14 +23,14 @@
 @implementation BarcodeScannedOperationTest {
   NSString *A_BARCODE;
   NSString *NOT_EXISTENT_BARCODE;
-  Price *A_PRICE;
+  Item *A_PRICE;
 }
 
 - (void)setUp {
   [super setUp];
   A_BARCODE = @"A_BARCODE";
   NOT_EXISTENT_BARCODE = @"NOT_EXISTENT_BARCODE";
-  A_PRICE = [[Price alloc] init];
+  A_PRICE = [[Item alloc] init];
 
   self.catalog = OCMProtocolMock(@protocol(Catalog));
   self.display = OCMProtocolMock(@protocol(Display));
@@ -44,7 +44,7 @@
   [OCMStub([_catalog findPrice:A_BARCODE]) andReturn:A_PRICE];
   [operation run:command];
 
-  OCMVerify([_display displayPriceFound:A_PRICE];);
+  OCMVerify([_display displayItemFound:A_PRICE];);
 }
 
 - (void)test_given_a_not_existent_barcode {
@@ -55,7 +55,7 @@
   [OCMStub([_catalog findPrice:NOT_EXISTENT_BARCODE]) andReturn:nil];
   [operation run:command];
 
-  OCMVerify([_display displayPriceNotFound];);
+  OCMVerify([_display displayItemNotFound];);
 }
 
 @end

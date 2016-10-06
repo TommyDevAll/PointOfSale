@@ -14,20 +14,21 @@
 		CC6840B518FE8F3E11709968 /* BarcodeScannedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A33BD98105112BD9435 /* BarcodeScannedCommand.m */; };
 		CC6840F224D1E32910C41794 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6846E39F34D085DB15E264 /* Command.m */; };
 		CC68411E82E50FFF2FF25500 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
-		CC68429073798DD5AEFB2AD4 /* TestInputProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684AE1785D4C3E46A43305 /* TestInputProvider.m */; };
 		CC68430E27EE5A43F0BF62D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC6844BC56EC3CBE2EDDCB47 /* Info.plist */; };
 		CC6843407C116D020C22536A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC6847CDC7736164BA43437E /* Info.plist */; };
 		CC684378FB1864D8717172F0 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6846E39F34D085DB15E264 /* Command.m */; };
 		CC6843931F5DD3D416AEADF0 /* FinishOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68417488694B4D32E7AA10 /* FinishOperation.m */; };
 		CC6843C52FF6703519B4C9E6 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845103A5D2E5BCF437C02 /* Controller.m */; };
+		CC6843C66CAC3F4BDA63A725 /* TestInputProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684F8C0817582B31612373 /* TestInputProvider.m */; };
 		CC6843E4ABA005A78697D150 /* BarcodeScannedOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6842704850288195BF794E /* BarcodeScannedOperation.m */; };
 		CC684445E4E3415AC7CD5FC5 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6846E39F34D085DB15E264 /* Command.m */; };
+		CC6844AFA7B4DF14AF48AC66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684528B8F9151149B28C5E /* ViewController.m */; };
 		CC68453F98777651A6050AA8 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
 		CC684544F33DC6C485CC44ED /* FinishCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68449017098432516316C6 /* FinishCommand.m */; };
 		CC68455577CEDCFA5EEE66FE /* BarcodeScannedOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6842704850288195BF794E /* BarcodeScannedOperation.m */; };
-		CC68465B2196B5F76A8441C7 /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Price.m */; };
+		CC68465B2196B5F76A8441C7 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Item.m */; };
 		CC6846917373E0E2871139CB /* FinishCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68449017098432516316C6 /* FinishCommand.m */; };
-		CC6846E74389A31728C9961E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6843268715A612566CE82F /* ViewController.m */; };
+		CC6847C27219978076A5F5B6 /* InMemoryCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68473E40A929D9616A1667 /* InMemoryCatalog.m */; };
 		CC6847CC0AC9975755635A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC68436C224D0CAE0CA8F826 /* Assets.xcassets */; };
 		CC68486847A21DEF6A708342 /* PointOfSaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6841ACAA9E054822EE8043 /* PointOfSaleController.m */; };
 		CC684877A63698609F21A004 /* BarcodeScannedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A33BD98105112BD9435 /* BarcodeScannedCommand.m */; };
@@ -39,18 +40,22 @@
 		CC684A19CF9814D040EA1D94 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845103A5D2E5BCF437C02 /* Controller.m */; };
 		CC684A8770118EE991D7E520 /* PointOfSaleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */; };
 		CC684A9790783F34786D7BCA /* PointOfSaleExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* PointOfSaleExecutor.m */; };
+		CC684B1233BBCF88D5F2646F /* TestInputProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684F8C0817582B31612373 /* TestInputProvider.m */; };
 		CC684B8CC629A4F3C320AFFA /* BarcodeScannedOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */; };
-		CC684C5437505A575DBE2AAC /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Price.m */; };
+		CC684C5437505A575DBE2AAC /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Item.m */; };
 		CC684C69F619D6565E53BD5D /* PointOfSaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6841ACAA9E054822EE8043 /* PointOfSaleController.m */; };
 		CC684CF880BC72F1E8AD75DA /* FinishOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6847705F0A2E7B37CCCDB3 /* FinishOperationTest.m */; };
 		CC684CFBB33ECC64C2AEB9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC684B0877DE0F0B0E369C07 /* LaunchScreen.storyboard */; };
 		CC684D07F7DA1AC4B7699BF4 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
+		CC684D57EC8E26C13A3CE2C1 /* TestInputProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684F8C0817582B31612373 /* TestInputProvider.m */; };
+		CC684D585367E6C02C39D8F8 /* InMemoryCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68473E40A929D9616A1667 /* InMemoryCatalog.m */; };
 		CC684D687AA54C4D99ACD268 /* FinishOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68417488694B4D32E7AA10 /* FinishOperation.m */; };
 		CC684D881E712449688568DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684DAA30AAA5264FA0C0E8 /* AppDelegate.m */; };
+		CC684DFA24CEAC8784B51482 /* InMemoryCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68473E40A929D9616A1667 /* InMemoryCatalog.m */; };
 		CC684EF9A3568314FC10ED3E /* BarcodeScannedCommandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684ED0FDD4E2CF844C20E4 /* BarcodeScannedCommandTest.m */; };
 		CC684F318B62752C08DDF299 /* BarcodeScannedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A33BD98105112BD9435 /* BarcodeScannedCommand.m */; };
 		CC684F64B01D3AE2734D34AF /* PointOfSaleExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* PointOfSaleExecutor.m */; };
-		CC684FAEBDC64AC38B103441 /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Price.m */; };
+		CC684FAEBDC64AC38B103441 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Item.m */; };
 		CC684FD6671F5A0F703B74F8 /* FinishOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68417488694B4D32E7AA10 /* FinishOperation.m */; };
 /* End PBXBuildFile section */
 
@@ -91,8 +96,8 @@
 		CC6841E6BFCCCBF4E584EEA3 /* TDD_CourseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDD_CourseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6842704850288195BF794E /* BarcodeScannedOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedOperation.m; sourceTree = "<group>"; };
 		CC6842DCC9CEC8DB7A964D33 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
-		CC6843268715A612566CE82F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CC68436C224D0CAE0CA8F826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC6843DCAE94F8BF40D40E22 /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
 		CC6844055CFC9D9ED7FFFB52 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
 		CC684422A2573E6815C404E4 /* BarcodeScannedCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeScannedCommand.h; sourceTree = "<group>"; };
 		CC6844258685AEBFD32F9304 /* Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operation.h; sourceTree = "<group>"; };
@@ -100,31 +105,33 @@
 		CC6844B07161BF260938E395 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC6844BC56EC3CBE2EDDCB47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		CC6845103A5D2E5BCF437C02 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		CC684528B8F9151149B28C5E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CC684547E4427A3DE60CFD2F /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
 		CC68457D2A294BB780CF907E /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
 		CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfSaleTest.m; sourceTree = "<group>"; };
 		CC68462FF873E4092EEEC553 /* PointOfSaleExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfSaleExecutor.m; sourceTree = "<group>"; };
 		CC6846E39F34D085DB15E264 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		CC68473E40A929D9616A1667 /* InMemoryCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InMemoryCatalog.m; sourceTree = "<group>"; };
 		CC6847705F0A2E7B37CCCDB3 /* FinishOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishOperationTest.m; sourceTree = "<group>"; };
 		CC6847CDC7736164BA43437E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		CC6848246E2173438CCD71B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC68482FADF4FFF688E5CAE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC6848749DF92863783D913B /* InMemoryCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMemoryCatalog.h; sourceTree = "<group>"; };
 		CC68487A8E8ECB578C9D07E9 /* FinishOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishOperation.h; sourceTree = "<group>"; };
 		CC684A33BD98105112BD9435 /* BarcodeScannedCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedCommand.m; sourceTree = "<group>"; };
-		CC684A60D6A574211D49988A /* Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
+		CC684A60D6A574211D49988A /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		CC684A763289D51E1A98C13A /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
-		CC684AE1785D4C3E46A43305 /* TestInputProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInputProvider.m; sourceTree = "<group>"; };
-		CC684B1B487B528F0E49FDAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CC684AB45986D8C78B23CC9E /* TestInputProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInputProvider.h; sourceTree = "<group>"; };
 		CC684C4B5E36440E31DC0C2F /* TDD_Course_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD_Course_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC684CCC39CFFE1AE694B950 /* FinishCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishCommand.h; sourceTree = "<group>"; };
 		CC684CFABE43178CB183150B /* Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Display.h; sourceTree = "<group>"; };
-		CC684D9182D5845E829A0A24 /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
 		CC684DAA30AAA5264FA0C0E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedOperationTest.m; sourceTree = "<group>"; };
-		CC684E8A4D89956827621CBD /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
+		CC684E8A4D89956827621CBD /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		CC684EA3A42E7113672C6B01 /* PointOfSaleExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointOfSaleExecutor.h; sourceTree = "<group>"; };
 		CC684ED0FDD4E2CF844C20E4 /* BarcodeScannedCommandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedCommandTest.m; sourceTree = "<group>"; };
-		CC684F5D9B45AD05F6408E61 /* TestInputProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInputProvider.h; sourceTree = "<group>"; };
+		CC684EE1D0B14E44AA8EF0CD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CC684F8C0817582B31612373 /* TestInputProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInputProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +185,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CC68402BCC1BC1DEF660B2F6 /* catalog */ = {
+			isa = PBXGroup;
+			children = (
+				CC6843DCAE94F8BF40D40E22 /* Catalog.h */,
+				CC6848749DF92863783D913B /* InMemoryCatalog.h */,
+				CC68473E40A929D9616A1667 /* InMemoryCatalog.m */,
+			);
+			path = catalog;
+			sourceTree = "<group>";
+		};
 		CC684156DF4CA60D11576CC2 /* commands */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				CC684CFABE43178CB183150B /* Display.h */,
-				CC684D9182D5845E829A0A24 /* Catalog.h */,
 				CC684547E4427A3DE60CFD2F /* Scanner.h */,
 				CC684A763289D51E1A98C13A /* Cart.m */,
 				CC6844055CFC9D9ED7FFFB52 /* Cart.h */,
@@ -210,10 +226,20 @@
 				CC684BF601A35627DAD2C878 /* operations */,
 				CC684A39A2267B3DA0F8399A /* commands */,
 				CC68452EE654960DA5DE55D5 /* controllers */,
-				CC684E8A4D89956827621CBD /* Price.m */,
-				CC684A60D6A574211D49988A /* Price.h */,
+				CC684E8A4D89956827621CBD /* Item.m */,
+				CC684A60D6A574211D49988A /* Item.h */,
+				CC68402BCC1BC1DEF660B2F6 /* catalog */,
+				CC684F8C0817582B31612373 /* TestInputProvider.m */,
+				CC684AB45986D8C78B23CC9E /* TestInputProvider.h */,
 			);
 			path = TDD_Course;
+			sourceTree = "<group>";
+		};
+		CC68442AA02C004614A1D7E8 /* catalog */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = catalog;
 			sourceTree = "<group>";
 		};
 		CC68452EE654960DA5DE55D5 /* controllers */ = {
@@ -225,6 +251,16 @@
 				CC6842DCC9CEC8DB7A964D33 /* Controller.h */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		CC6848A27D2FFCEFF7FC61D0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CC684EE1D0B14E44AA8EF0CD /* ViewController.h */,
+				CC684528B8F9151149B28C5E /* ViewController.m */,
+				CC68442AA02C004614A1D7E8 /* catalog */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		CC684A39A2267B3DA0F8399A /* commands */ = {
@@ -245,8 +281,6 @@
 			children = (
 				CC6847CDC7736164BA43437E /* Info.plist */,
 				CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */,
-				CC684AE1785D4C3E46A43305 /* TestInputProvider.m */,
-				CC684F5D9B45AD05F6408E61 /* TestInputProvider.h */,
 				CC684F79D10A11699C0D3C90 /* operations */,
 				CC684156DF4CA60D11576CC2 /* commands */,
 			);
@@ -283,8 +317,7 @@
 				CC6844B07161BF260938E395 /* AppDelegate.h */,
 				CC684DAA30AAA5264FA0C0E8 /* AppDelegate.m */,
 				CC68468DDBF7F127BE6BD34C /* Main.storyboard */,
-				CC684B1B487B528F0E49FDAE /* ViewController.h */,
-				CC6843268715A612566CE82F /* ViewController.m */,
+				CC6848A27D2FFCEFF7FC61D0 /* Source */,
 			);
 			path = TDD_Course_iOS;
 			sourceTree = "<group>";
@@ -487,7 +520,9 @@
 				CC684445E4E3415AC7CD5FC5 /* Command.m in Sources */,
 				CC68486847A21DEF6A708342 /* PointOfSaleController.m in Sources */,
 				CC6843C52FF6703519B4C9E6 /* Controller.m in Sources */,
-				CC684FAEBDC64AC38B103441 /* Price.m in Sources */,
+				CC684FAEBDC64AC38B103441 /* Item.m in Sources */,
+				CC6847C27219978076A5F5B6 /* InMemoryCatalog.m in Sources */,
+				CC684D57EC8E26C13A3CE2C1 /* TestInputProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +532,6 @@
 			files = (
 				CC68489621DF39E86E3A3DAA /* main.m in Sources */,
 				CC684D881E712449688568DC /* AppDelegate.m in Sources */,
-				CC6846E74389A31728C9961E /* ViewController.m in Sources */,
 				CC68453F98777651A6050AA8 /* Cart.m in Sources */,
 				CC684F64B01D3AE2734D34AF /* PointOfSaleExecutor.m in Sources */,
 				CC6843E4ABA005A78697D150 /* BarcodeScannedOperation.m in Sources */,
@@ -507,7 +541,10 @@
 				CC684378FB1864D8717172F0 /* Command.m in Sources */,
 				CC684C69F619D6565E53BD5D /* PointOfSaleController.m in Sources */,
 				CC684A19CF9814D040EA1D94 /* Controller.m in Sources */,
-				CC684C5437505A575DBE2AAC /* Price.m in Sources */,
+				CC684C5437505A575DBE2AAC /* Item.m in Sources */,
+				CC6844AFA7B4DF14AF48AC66 /* ViewController.m in Sources */,
+				CC684D585367E6C02C39D8F8 /* InMemoryCatalog.m in Sources */,
+				CC6843C66CAC3F4BDA63A725 /* TestInputProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +555,6 @@
 				CC684A8770118EE991D7E520 /* PointOfSaleTest.m in Sources */,
 				CC68411E82E50FFF2FF25500 /* Cart.m in Sources */,
 				CC684A9790783F34786D7BCA /* PointOfSaleExecutor.m in Sources */,
-				CC68429073798DD5AEFB2AD4 /* TestInputProvider.m in Sources */,
 				CC68455577CEDCFA5EEE66FE /* BarcodeScannedOperation.m in Sources */,
 				CC6843931F5DD3D416AEADF0 /* FinishOperation.m in Sources */,
 				CC6840B518FE8F3E11709968 /* BarcodeScannedCommand.m in Sources */,
@@ -528,8 +564,10 @@
 				CC684A0E78E1261538DE8E2A /* Controller.m in Sources */,
 				CC684B8CC629A4F3C320AFFA /* BarcodeScannedOperationTest.m in Sources */,
 				CC684CF880BC72F1E8AD75DA /* FinishOperationTest.m in Sources */,
-				CC68465B2196B5F76A8441C7 /* Price.m in Sources */,
+				CC68465B2196B5F76A8441C7 /* Item.m in Sources */,
 				CC684EF9A3568314FC10ED3E /* BarcodeScannedCommandTest.m in Sources */,
+				CC684DFA24CEAC8784B51482 /* InMemoryCatalog.m in Sources */,
+				CC684B1233BBCF88D5F2646F /* TestInputProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

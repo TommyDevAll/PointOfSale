@@ -13,5 +13,5 @@
 @property (weak) id<Display> display;
 @property (weak) Cart *cart;
 
-+ (id)operationWithCart:(Cart *)cart andDisplay:(id)display;
++ (id)operationWithCart:(Cart *)cart andDisplay:(id<Display>)display;
 @end

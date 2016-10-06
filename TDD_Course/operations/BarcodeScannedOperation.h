@@ -16,5 +16,5 @@
 @property (weak) id<Catalog> catalog;
 @property (weak) Cart *cart;
 
-+ (id)operationWithCatalog:(id)catalog cart:(Cart *)cart andDisplay:(id)display;
++ (id)operationWithCatalog:(id<Catalog>)catalog cart:(Cart *)cart andDisplay:(id<Display>)display;
 @end

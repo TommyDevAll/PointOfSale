@@ -9,7 +9,7 @@
 
 
 @implementation FinishOperation
-+ (id)operationWithCart:(Cart *)cart andDisplay:(id)display {
++ (id)operationWithCart:(Cart *)cart andDisplay:(id<Display>)display {
   FinishOperation *operation = [FinishOperation new];
   operation.cart = cart;
   operation.display = display;
