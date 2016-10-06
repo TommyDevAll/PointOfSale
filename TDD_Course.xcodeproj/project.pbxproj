@@ -45,6 +45,7 @@
 		CC684BF444093915742A2326 /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684879D25B28F4AD15C9D6 /* Price.m */; };
 		CC684C69F619D6565E53BD5D /* PointOfSaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6841ACAA9E054822EE8043 /* PointOfSaleController.m */; };
 		CC684C9F05B72CF3F4DB9BB9 /* InMemoryScannerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684221BC599E706740A00E /* InMemoryScannerTest.m */; };
+		CC684CF880BC72F1E8AD75DA /* FinishOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6847705F0A2E7B37CCCDB3 /* FinishOperationTest.m */; };
 		CC684CFBB33ECC64C2AEB9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC684B0877DE0F0B0E369C07 /* LaunchScreen.storyboard */; };
 		CC684D07F7DA1AC4B7699BF4 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
 		CC684D687AA54C4D99ACD268 /* FinishOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68417488694B4D32E7AA10 /* FinishOperation.m */; };
@@ -109,6 +110,7 @@
 		CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfSaleTest.m; sourceTree = "<group>"; };
 		CC68462FF873E4092EEEC553 /* PointOfSaleExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfSaleExecutor.m; sourceTree = "<group>"; };
 		CC6846E39F34D085DB15E264 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		CC6847705F0A2E7B37CCCDB3 /* FinishOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishOperationTest.m; sourceTree = "<group>"; };
 		CC6847CDC7736164BA43437E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		CC6848246E2173438CCD71B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC68482FADF4FFF688E5CAE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */,
+				CC6847705F0A2E7B37CCCDB3 /* FinishOperationTest.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				CC68403F8FA7DA04DFCA9DCB /* PointOfSaleController.m in Sources */,
 				CC684A0E78E1261538DE8E2A /* Controller.m in Sources */,
 				CC684B8CC629A4F3C320AFFA /* BarcodeScannedOperationTest.m in Sources */,
+				CC684CF880BC72F1E8AD75DA /* FinishOperationTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
