@@ -47,6 +47,7 @@
 		CC684D07F7DA1AC4B7699BF4 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
 		CC684D687AA54C4D99ACD268 /* FinishOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68417488694B4D32E7AA10 /* FinishOperation.m */; };
 		CC684D881E712449688568DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684DAA30AAA5264FA0C0E8 /* AppDelegate.m */; };
+		CC684EF9A3568314FC10ED3E /* BarcodeScannedCommandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684ED0FDD4E2CF844C20E4 /* BarcodeScannedCommandTest.m */; };
 		CC684F318B62752C08DDF299 /* BarcodeScannedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A33BD98105112BD9435 /* BarcodeScannedCommand.m */; };
 		CC684F64B01D3AE2734D34AF /* PointOfSaleExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* PointOfSaleExecutor.m */; };
 		CC684FAEBDC64AC38B103441 /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Price.m */; };
@@ -122,6 +123,7 @@
 		CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedOperationTest.m; sourceTree = "<group>"; };
 		CC684E8A4D89956827621CBD /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
 		CC684EA3A42E7113672C6B01 /* PointOfSaleExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointOfSaleExecutor.h; sourceTree = "<group>"; };
+		CC684ED0FDD4E2CF844C20E4 /* BarcodeScannedCommandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedCommandTest.m; sourceTree = "<group>"; };
 		CC684F5D9B45AD05F6408E61 /* TestInputProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInputProvider.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,14 @@
 				AB686F3DF67A118CE7A90CC7 /* libPods-TDD_CourseTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC684156DF4CA60D11576CC2 /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				CC684ED0FDD4E2CF844C20E4 /* BarcodeScannedCommandTest.m */,
+			);
+			path = commands;
 			sourceTree = "<group>";
 		};
 		CC684230F327A5596C8C55B2 /* Products */ = {
@@ -237,7 +247,8 @@
 				CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */,
 				CC684AE1785D4C3E46A43305 /* TestInputProvider.m */,
 				CC684F5D9B45AD05F6408E61 /* TestInputProvider.h */,
-				CC684F79D10A11699C0D3C90 /* controllers */,
+				CC684F79D10A11699C0D3C90 /* operations */,
+				CC684156DF4CA60D11576CC2 /* commands */,
 			);
 			path = TDD_CourseTests;
 			sourceTree = "<group>";
@@ -278,13 +289,13 @@
 			path = TDD_Course_iOS;
 			sourceTree = "<group>";
 		};
-		CC684F79D10A11699C0D3C90 /* controllers */ = {
+		CC684F79D10A11699C0D3C90 /* operations */ = {
 			isa = PBXGroup;
 			children = (
 				CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */,
 				CC6847705F0A2E7B37CCCDB3 /* FinishOperationTest.m */,
 			);
-			path = controllers;
+			path = operations;
 			sourceTree = "<group>";
 		};
 		CC684F9ED0F36C25224E57CA = {
@@ -518,6 +529,7 @@
 				CC684B8CC629A4F3C320AFFA /* BarcodeScannedOperationTest.m in Sources */,
 				CC684CF880BC72F1E8AD75DA /* FinishOperationTest.m in Sources */,
 				CC68465B2196B5F76A8441C7 /* Price.m in Sources */,
+				CC684EF9A3568314FC10ED3E /* BarcodeScannedCommandTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
