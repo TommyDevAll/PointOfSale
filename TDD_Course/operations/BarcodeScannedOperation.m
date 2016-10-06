@@ -10,10 +10,6 @@
 #import "BarcodeScannedCommand.h"
 
 @implementation BarcodeScannedOperation
-- (void)run:(Command *)command {
-  [self onBarcodeScanned:(BarcodeScannedCommand *) command];
-}
-
 + (id)operationWithCatalog:(id)catalog cart:(Cart *)cart andDisplay:(id)display {
   BarcodeScannedOperation *operation = [BarcodeScannedOperation new];
   operation.display = display;
@@ -22,8 +18,8 @@
   return operation;
 }
 
-- (void)onBarcodeScanned:(BarcodeScannedCommand *)command {
-  Price *price = [self.catalog findPrice:command.barcode];
+- (void)run:(Command *)command {
+  Price *price = [self.catalog findPrice:((BarcodeScannedCommand *) command).barcode];
   if(price)
     [self priceFound:price];
   else

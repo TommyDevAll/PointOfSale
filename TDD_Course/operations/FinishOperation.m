@@ -9,14 +9,14 @@
 
 
 @implementation FinishOperation
-- (void)run:(Command *)command {
-  [self.display displayTotal:self.cart.total];
-}
-
 + (id)operationWithCart:(Cart *)cart andDisplay:(id)display {
   FinishOperation *operation = [FinishOperation new];
   operation.cart = cart;
   operation.display = display;
   return operation;
+}
+
+- (void)run:(Command *)command {
+  [self.display displayTotal:self.cart.total];
 }
 @end

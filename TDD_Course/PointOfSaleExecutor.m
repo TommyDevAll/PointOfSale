@@ -3,20 +3,18 @@
 // Copyright (c) 2016 Tommaso Resti. All rights reserved.
 //
 
-#import "CommandExecutor.h"
+#import "PointOfSaleExecutor.h"
 #import "Scanner.h"
-#import "Controller.h"
-#import "PointOfSale.h"
-#import "InMemoryScannerInput.h"
+#import "controllers/Controller.h"
 
 
-@interface CommandExecutor ()
+@interface PointOfSaleExecutor ()
 @property(nonatomic, strong) Controller* controller;
 @end
 
 
 
-@implementation CommandExecutor
+@implementation PointOfSaleExecutor
 
 - (instancetype)initWithController:(Controller *)controller {
   self = [super init];
@@ -27,7 +25,7 @@
   return self;
 }
 
-+ (instancetype)executorWithController:(Controller *)controller {
++ (instancetype)executorWithOperationRouter:(Controller *)controller {
   return [[self alloc] initWithController:controller];
 }
 

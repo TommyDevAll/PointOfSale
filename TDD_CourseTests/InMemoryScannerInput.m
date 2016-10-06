@@ -6,7 +6,7 @@
 #import "InMemoryScannerInput.h"
 #import "BarcodeScannedCommand.h"
 #import "FinishCommand.h"
-#import "PointOfSale.h"
+#import "Controller.h"
 
 
 @interface InMemoryScannerInput ()

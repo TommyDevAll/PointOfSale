@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 #import "Scanner.h"
 
-@class PointOfSale;
+@class Controller;
 
 @interface InMemoryScannerInput : NSObject <Scanner>
 - (instancetype)initWithBarcodes:(NSArray *)barcodes;

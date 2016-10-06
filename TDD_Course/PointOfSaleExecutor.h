@@ -9,10 +9,10 @@
 @class Controller;
 
 
-@interface CommandExecutor : NSObject
+@interface PointOfSaleExecutor : NSObject
 - (instancetype)initWithController:(Controller *)controller;
 
-+ (instancetype)executorWithController:(Controller *)controller;
++ (instancetype)executorWithOperationRouter:(Controller *)controller;
 
 - (void)consume:(id<Input>)input;
 @end
