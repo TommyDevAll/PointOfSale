@@ -13,7 +13,7 @@
 #import "Cart.h"
 #import "Display.h"
 #import "FinishOperation.h"
-#import "../../TDD_Course/catalog/InMemoryCatalog.h"
+#import "InMemoryCatalog.h"
 #import "TestInputProvider.h"
 #import "FinishCommand.h"
 

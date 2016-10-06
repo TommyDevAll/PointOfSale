@@ -14,7 +14,7 @@
 #import "TestInputProvider.h"
 #import "BarcodeScannedOperation.h"
 #import "FinishOperation.h"
-#import "../TDD_Course/controllers/PointOfSaleController.h"
+#import "PointOfSaleController.h"
 
 @interface PointOfSaleTest : XCTestCase
 @end
