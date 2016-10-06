@@ -41,6 +41,7 @@
 }
 
 - (void)registerOperation:(BarcodeScannedOperation *)operation forCommandType:(Class)type {
-  [self.operations setObject:operation forKey:type];
+  if(operation && [type isSubclassOfClass:Command.class])
+    [self.operations setObject:operation forKey:type];
 }
 @end

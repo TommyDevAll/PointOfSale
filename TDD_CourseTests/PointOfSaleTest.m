@@ -29,8 +29,7 @@
 
 - (void)test_a_scan {
   BarcodeScannedOperation *scannedOperation = OCMClassMock(BarcodeScannedOperation.class);
-  FinishOperation *finishOperation = OCMClassMock(FinishOperation.class);
-  PointOfSaleController *pointOfSale = [PointOfSaleController controllerWithScanOperation:scannedOperation andCheckoutOperation: finishOperation];
+  PointOfSaleController *pointOfSale = [PointOfSaleController controllerWithScanOperation:scannedOperation andCheckoutOperation: nil];
   BarcodeScannedCommand *scannedCommand = [BarcodeScannedCommand barcodeScannedWithBarcode:@"::a barcode::"];
   id<Input> inputProvider = [TestInputProvider providerWithCommands:@[scannedCommand]];
   PointOfSaleExecutor *executor = [PointOfSaleExecutor executorWithController:pointOfSale];

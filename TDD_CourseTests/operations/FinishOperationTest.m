@@ -22,7 +22,6 @@
     [super setUp];
 }
 
-
 - (void)test_finish {
   Cart *cart = OCMClassMock(Cart.class);
   id<Display> display = OCMProtocolMock(@protocol(Display));
@@ -32,13 +31,6 @@
   [operation run:nil];
 
   OCMVerify([display displayTotal:1];);
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
 }
 
 @end
