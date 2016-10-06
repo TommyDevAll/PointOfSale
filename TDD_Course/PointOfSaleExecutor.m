@@ -23,7 +23,7 @@
   return self;
 }
 
-+ (instancetype)executorWithOperationRouter:(Controller *)controller {
++ (instancetype)executorWithController:(Controller *)controller {
   return [[self alloc] initWithController:controller];
 }
 

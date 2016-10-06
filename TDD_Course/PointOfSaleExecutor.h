@@ -12,7 +12,7 @@
 @interface PointOfSaleExecutor : NSObject
 - (instancetype)initWithController:(Controller *)controller;
 
-+ (instancetype)executorWithOperationRouter:(Controller *)controller;
++ (instancetype)executorWithController:(Controller *)controller;
 
 - (void)consume:(id<Input>)input;
 @end

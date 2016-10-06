@@ -7,14 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "Controller.h"
-#import "Catalog.h"
-#import "Display.h"
 #import "Scanner.h"
 #import "OCMock.h"
-#import "InMemoryScannerInput.h"
 #import "FinishCommand.h"
-#import "Cart.h"
 #import "PointOfSaleExecutor.h"
 #import "TestInputProvider.h"
 #import "BarcodeScannedOperation.h"
@@ -22,24 +17,14 @@
 #import "../TDD_Course/controllers/PointOfSaleController.h"
 
 @interface PointOfSaleTest : XCTestCase
-@property id<Catalog> catalog;
-@property id<Display> display;
 @end
 
 @implementation PointOfSaleTest {
-  NSString *A_BARCODE;
-  NSString *NOT_EXISTENT_BARCODE;
-  Price *A_PRICE;
+
 }
 
 - (void)setUp {
   [super setUp];
-  A_BARCODE = @"A_BARCODE";
-  NOT_EXISTENT_BARCODE = @"NOT_EXISTENT_BARCODE";
-  A_PRICE = [[Price alloc] init];
-
-  self.catalog = OCMProtocolMock(@protocol(Catalog));
-  self.display = OCMProtocolMock(@protocol(Display));
 }
 
 - (void)test_a_scan {
@@ -48,7 +33,7 @@
   PointOfSaleController *pointOfSale = [PointOfSaleController controllerWithScanOperation:scannedOperation andCheckoutOperation: finishOperation];
   BarcodeScannedCommand *scannedCommand = [BarcodeScannedCommand barcodeScannedWithBarcode:@"::a barcode::"];
   id<Input> inputProvider = [TestInputProvider providerWithCommands:@[scannedCommand]];
-  PointOfSaleExecutor *executor = [PointOfSaleExecutor executorWithOperationRouter:pointOfSale];
+  PointOfSaleExecutor *executor = [PointOfSaleExecutor executorWithController:pointOfSale];
 
   [executor consume:inputProvider];
 
@@ -61,7 +46,7 @@
   PointOfSaleController *pointOfSale = [PointOfSaleController controllerWithScanOperation:scannedOperation andCheckoutOperation: finishOperation];
   Command *finishCommand = [FinishCommand new];
   id<Input> inputProvider = [TestInputProvider providerWithCommands:@[finishCommand]];
-  PointOfSaleExecutor *executor = [PointOfSaleExecutor executorWithOperationRouter:pointOfSale];
+  PointOfSaleExecutor *executor = [PointOfSaleExecutor executorWithController:pointOfSale];
 
   [executor consume:inputProvider];
 
