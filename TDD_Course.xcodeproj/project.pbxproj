@@ -41,6 +41,7 @@
 		CC684A19CF9814D040EA1D94 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845103A5D2E5BCF437C02 /* Controller.m */; };
 		CC684A8770118EE991D7E520 /* PointOfSaleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */; };
 		CC684A9790783F34786D7BCA /* PointOfSaleExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* PointOfSaleExecutor.m */; };
+		CC684B8CC629A4F3C320AFFA /* BarcodeScannedOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */; };
 		CC684BF444093915742A2326 /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684879D25B28F4AD15C9D6 /* Price.m */; };
 		CC684C69F619D6565E53BD5D /* PointOfSaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6841ACAA9E054822EE8043 /* PointOfSaleController.m */; };
 		CC684C9F05B72CF3F4DB9BB9 /* InMemoryScannerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684221BC599E706740A00E /* InMemoryScannerTest.m */; };
@@ -122,6 +123,7 @@
 		CC684CFABE43178CB183150B /* Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Display.h; sourceTree = "<group>"; };
 		CC684D9182D5845E829A0A24 /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
 		CC684DAA30AAA5264FA0C0E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedOperationTest.m; sourceTree = "<group>"; };
 		CC684EA3A42E7113672C6B01 /* PointOfSaleExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointOfSaleExecutor.h; sourceTree = "<group>"; };
 		CC684F5D9B45AD05F6408E61 /* TestInputProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInputProvider.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +243,7 @@
 				CC684221BC599E706740A00E /* InMemoryScannerTest.m */,
 				CC684AE1785D4C3E46A43305 /* TestInputProvider.m */,
 				CC684F5D9B45AD05F6408E61 /* TestInputProvider.h */,
+				CC684F79D10A11699C0D3C90 /* controllers */,
 			);
 			path = TDD_CourseTests;
 			sourceTree = "<group>";
@@ -279,6 +282,14 @@
 				CC6843268715A612566CE82F /* ViewController.m */,
 			);
 			path = TDD_Course_iOS;
+			sourceTree = "<group>";
+		};
+		CC684F79D10A11699C0D3C90 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 		CC684F9ED0F36C25224E57CA = {
@@ -512,6 +523,7 @@
 				CC6840F224D1E32910C41794 /* Command.m in Sources */,
 				CC68403F8FA7DA04DFCA9DCB /* PointOfSaleController.m in Sources */,
 				CC684A0E78E1261538DE8E2A /* Controller.m in Sources */,
+				CC684B8CC629A4F3C320AFFA /* BarcodeScannedOperationTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
