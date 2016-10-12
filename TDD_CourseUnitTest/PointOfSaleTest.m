@@ -7,8 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "Scanner.h"
 #import "OCMock.h"
+#import "Scanner.h"
 #import "FinishCommand.h"
 #import "Executor.h"
 #import "TestInputProvider.h"

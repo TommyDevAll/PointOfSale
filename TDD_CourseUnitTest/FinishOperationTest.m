@@ -6,7 +6,7 @@
 //  Copyright (c) 2016 Tommaso Resti. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+#import "../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.h"
 #import "FinishOperation.h"
 #import "OCMock.h"
 #import "Display.h"

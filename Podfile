@@ -1,3 +1,3 @@
-target 'TDD_CourseTests' do
+target 'TDD_CourseUnitTest' do
   pod 'OCMock'
 end

@@ -7,67 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0266B6AE89B2DA354D53444A /* libPods-TDD_CourseUnitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8308E7203691B74696569811 /* libPods-TDD_CourseUnitTest.a */; };
 		0996554E1DA4EB2E000D0CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996554D1DA4EB2E000D0CC7 /* main.m */; };
-		2921574549FC3DB79AED2706 /* libPods-TDD_CourseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB686F3DF67A118CE7A90CC7 /* libPods-TDD_CourseTests.a */; };
-		CC68403F8FA7DA04DFCA9DCB /* PointOfSaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6841ACAA9E054822EE8043 /* PointOfSaleController.m */; };
+		09B334B41DAE687C00163C5B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09B334B31DAE687C00163C5B /* Info.plist */; };
+		09B334B51DAE693000163C5B /* BarcodeScannedCommandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6842915A1D1388A677FD14 /* BarcodeScannedCommandTest.m */; };
+		09B334B61DAE693000163C5B /* BarcodeScannedOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6846A1086AC0345E1247E8 /* BarcodeScannedOperationTest.m */; };
+		09B334B71DAE693000163C5B /* FinishOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68426BD56098BE78247931 /* FinishOperationTest.m */; };
+		09B334B81DAE693000163C5B /* PointOfSaleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684B42AF032FC1062AA318 /* PointOfSaleTest.m */; };
+		09B334BA1DAE694F00163C5B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B334B91DAE694F00163C5B /* XCTest.framework */; };
 		CC684050202C1AF48DF15A3E /* Executor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* Executor.m */; };
-		CC6840B518FE8F3E11709968 /* BarcodeScannedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A33BD98105112BD9435 /* BarcodeScannedCommand.m */; };
-		CC6840F224D1E32910C41794 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6846E39F34D085DB15E264 /* Command.m */; };
-		CC68411E82E50FFF2FF25500 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
+		CC68410221A0D5CAD5368E0E /* Executor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* Executor.m */; };
+		CC6842144125B7CD3389D2B7 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6846E39F34D085DB15E264 /* Command.m */; };
 		CC68430E27EE5A43F0BF62D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC6844BC56EC3CBE2EDDCB47 /* Info.plist */; };
-		CC6843407C116D020C22536A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC6847CDC7736164BA43437E /* Info.plist */; };
 		CC684378FB1864D8717172F0 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6846E39F34D085DB15E264 /* Command.m */; };
-		CC6843931F5DD3D416AEADF0 /* FinishOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68417488694B4D32E7AA10 /* FinishOperation.m */; };
 		CC6843C52FF6703519B4C9E6 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845103A5D2E5BCF437C02 /* Controller.m */; };
 		CC6843C66CAC3F4BDA63A725 /* TestInputProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684F8C0817582B31612373 /* TestInputProvider.m */; };
 		CC6843E4ABA005A78697D150 /* BarcodeScannedOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6842704850288195BF794E /* BarcodeScannedOperation.m */; };
+		CC68441CB15DB6F3038F0D37 /* BarcodeScannedOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6842704850288195BF794E /* BarcodeScannedOperation.m */; };
 		CC684445E4E3415AC7CD5FC5 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6846E39F34D085DB15E264 /* Command.m */; };
+		CC684484B22E0B1DA84F9F8D /* InMemoryCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68473E40A929D9616A1667 /* InMemoryCatalog.m */; };
 		CC6844AFA7B4DF14AF48AC66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684528B8F9151149B28C5E /* ViewController.m */; };
 		CC68453F98777651A6050AA8 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
 		CC684544F33DC6C485CC44ED /* FinishCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68449017098432516316C6 /* FinishCommand.m */; };
-		CC68455577CEDCFA5EEE66FE /* BarcodeScannedOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6842704850288195BF794E /* BarcodeScannedOperation.m */; };
-		CC68465B2196B5F76A8441C7 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Item.m */; };
-		CC6846917373E0E2871139CB /* FinishCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68449017098432516316C6 /* FinishCommand.m */; };
+		CC68469ACAB6AA54F4D13726 /* BarcodeScannedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A33BD98105112BD9435 /* BarcodeScannedCommand.m */; };
 		CC6847C27219978076A5F5B6 /* InMemoryCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68473E40A929D9616A1667 /* InMemoryCatalog.m */; };
 		CC6847CC0AC9975755635A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC68436C224D0CAE0CA8F826 /* Assets.xcassets */; };
 		CC68486847A21DEF6A708342 /* PointOfSaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6841ACAA9E054822EE8043 /* PointOfSaleController.m */; };
+		CC68486C1A9633BE6B309DAF /* FinishCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68449017098432516316C6 /* FinishCommand.m */; };
 		CC684877A63698609F21A004 /* BarcodeScannedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A33BD98105112BD9435 /* BarcodeScannedCommand.m */; };
 		CC68489621DF39E86E3A3DAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68482FADF4FFF688E5CAE0 /* main.m */; };
 		CC6848BA0CD6CCA4F2D82609 /* BarcodeScannedOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6842704850288195BF794E /* BarcodeScannedOperation.m */; };
 		CC6849004552BFB3A932FFF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC68468DDBF7F127BE6BD34C /* Main.storyboard */; };
 		CC68490065123EDA5E83B747 /* FinishCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68449017098432516316C6 /* FinishCommand.m */; };
-		CC684A0E78E1261538DE8E2A /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845103A5D2E5BCF437C02 /* Controller.m */; };
+		CC6849A082CE7D0F22C0CE40 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Item.m */; };
 		CC684A19CF9814D040EA1D94 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845103A5D2E5BCF437C02 /* Controller.m */; };
-		CC684A8770118EE991D7E520 /* PointOfSaleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */; };
-		CC684A9790783F34786D7BCA /* Executor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* Executor.m */; };
-		CC684B1233BBCF88D5F2646F /* TestInputProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684F8C0817582B31612373 /* TestInputProvider.m */; };
-		CC684B8CC629A4F3C320AFFA /* BarcodeScannedOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */; };
+		CC684A74EF02480373FF70AB /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6845103A5D2E5BCF437C02 /* Controller.m */; };
+		CC684C27DC6FEA3F3FCA04D8 /* TestInputProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684F8C0817582B31612373 /* TestInputProvider.m */; };
+		CC684C28CC6A7B48967D8BC4 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
 		CC684C5437505A575DBE2AAC /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Item.m */; };
 		CC684C69F619D6565E53BD5D /* PointOfSaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6841ACAA9E054822EE8043 /* PointOfSaleController.m */; };
-		CC684CF880BC72F1E8AD75DA /* FinishOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6847705F0A2E7B37CCCDB3 /* FinishOperationTest.m */; };
+		CC684CDB0620EE1709ACB5E3 /* FinishOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68417488694B4D32E7AA10 /* FinishOperation.m */; };
+		CC684CF9435EBC0401F74ED2 /* PointOfSaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6841ACAA9E054822EE8043 /* PointOfSaleController.m */; };
 		CC684CFBB33ECC64C2AEB9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC684B0877DE0F0B0E369C07 /* LaunchScreen.storyboard */; };
 		CC684D07F7DA1AC4B7699BF4 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A763289D51E1A98C13A /* Cart.m */; };
 		CC684D57EC8E26C13A3CE2C1 /* TestInputProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684F8C0817582B31612373 /* TestInputProvider.m */; };
 		CC684D585367E6C02C39D8F8 /* InMemoryCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68473E40A929D9616A1667 /* InMemoryCatalog.m */; };
 		CC684D687AA54C4D99ACD268 /* FinishOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68417488694B4D32E7AA10 /* FinishOperation.m */; };
 		CC684D881E712449688568DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684DAA30AAA5264FA0C0E8 /* AppDelegate.m */; };
-		CC684DFA24CEAC8784B51482 /* InMemoryCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68473E40A929D9616A1667 /* InMemoryCatalog.m */; };
-		CC684EF9A3568314FC10ED3E /* BarcodeScannedCommandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684ED0FDD4E2CF844C20E4 /* BarcodeScannedCommandTest.m */; };
 		CC684F318B62752C08DDF299 /* BarcodeScannedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684A33BD98105112BD9435 /* BarcodeScannedCommand.m */; };
 		CC684F64B01D3AE2734D34AF /* Executor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68462FF873E4092EEEC553 /* Executor.m */; };
 		CC684FAEBDC64AC38B103441 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = CC684E8A4D89956827621CBD /* Item.m */; };
 		CC684FD6671F5A0F703B74F8 /* FinishOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68417488694B4D32E7AA10 /* FinishOperation.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CC684694F83FB4C6F04687EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CC684AF96D149692EB29514E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC684C2923600EC1C1538F11;
-			remoteInfo = TDD_Course;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		099655491DA4EB2E000D0CC7 /* CopyFiles */ = {
@@ -84,17 +75,27 @@
 /* Begin PBXFileReference section */
 		0996554B1DA4EB2E000D0CC7 /* TDD_Course_macOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TDD_Course_macOS; sourceTree = BUILT_PRODUCTS_DIR; };
 		0996554D1DA4EB2E000D0CC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09B334AB1DAE684200163C5B /* TDD_CourseUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDD_CourseUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B334B31DAE687C00163C5B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09B334B91DAE694F00163C5B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3103528833DA0580873FDA14 /* Pods-TDD_CourseUnutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDD_CourseUnutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDD_CourseUnutTests/Pods-TDD_CourseUnutTests.release.xcconfig"; sourceTree = "<group>"; };
+		8308E7203691B74696569811 /* libPods-TDD_CourseUnitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDD_CourseUnitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA85BE43CE5550A1A4D822B /* Pods-TDD_CourseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDD_CourseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDD_CourseTests/Pods-TDD_CourseTests.release.xcconfig"; sourceTree = "<group>"; };
 		94794ACED823556A8C404311 /* Pods-TDD_CourseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDD_CourseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDD_CourseTests/Pods-TDD_CourseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB686F3DF67A118CE7A90CC7 /* libPods-TDD_CourseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDD_CourseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB91D9C16B09584BC7660F23 /* libPods-TDD_CourseUnutTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDD_CourseUnutTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF72957357CF470A2AD77B47 /* Pods-TDD_CourseUnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDD_CourseUnitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDD_CourseUnitTest/Pods-TDD_CourseUnitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		BCEC9209A458A5B01D12C935 /* Pods-TDD_CourseUnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDD_CourseUnitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDD_CourseUnitTest/Pods-TDD_CourseUnitTest.release.xcconfig"; sourceTree = "<group>"; };
+		C4258EA4B7181CF1BDBA98A8 /* Pods-TDD_CourseUnutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDD_CourseUnutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDD_CourseUnutTests/Pods-TDD_CourseUnutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC6840BC3B323FEC1B2A097D /* PointOfSaleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointOfSaleController.h; sourceTree = "<group>"; };
 		CC6840BD7FDDCF0F1CCD3E1D /* Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input.h; sourceTree = "<group>"; };
 		CC6841610274E1680420247E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC68417488694B4D32E7AA10 /* FinishOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishOperation.m; sourceTree = "<group>"; };
 		CC6841ACAA9E054822EE8043 /* PointOfSaleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfSaleController.m; sourceTree = "<group>"; };
 		CC6841BFDBFD8A5C612C716D /* BarcodeScannedOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeScannedOperation.h; sourceTree = "<group>"; };
-		CC6841E6BFCCCBF4E584EEA3 /* TDD_CourseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDD_CourseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC68426BD56098BE78247931 /* FinishOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishOperationTest.m; sourceTree = "<group>"; };
 		CC6842704850288195BF794E /* BarcodeScannedOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedOperation.m; sourceTree = "<group>"; };
+		CC6842915A1D1388A677FD14 /* BarcodeScannedCommandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedCommandTest.m; sourceTree = "<group>"; };
 		CC6842DCC9CEC8DB7A964D33 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		CC68436C224D0CAE0CA8F826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC6843DCAE94F8BF40D40E22 /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
@@ -108,12 +109,10 @@
 		CC684528B8F9151149B28C5E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CC684547E4427A3DE60CFD2F /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
 		CC68457D2A294BB780CF907E /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
-		CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfSaleTest.m; sourceTree = "<group>"; };
 		CC68462FF873E4092EEEC553 /* Executor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Executor.m; sourceTree = "<group>"; };
+		CC6846A1086AC0345E1247E8 /* BarcodeScannedOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedOperationTest.m; sourceTree = "<group>"; };
 		CC6846E39F34D085DB15E264 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
 		CC68473E40A929D9616A1667 /* InMemoryCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InMemoryCatalog.m; sourceTree = "<group>"; };
-		CC6847705F0A2E7B37CCCDB3 /* FinishOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishOperationTest.m; sourceTree = "<group>"; };
-		CC6847CDC7736164BA43437E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		CC6848246E2173438CCD71B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC68482FADF4FFF688E5CAE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC6848749DF92863783D913B /* InMemoryCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMemoryCatalog.h; sourceTree = "<group>"; };
@@ -122,14 +121,13 @@
 		CC684A60D6A574211D49988A /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		CC684A763289D51E1A98C13A /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
 		CC684AB45986D8C78B23CC9E /* TestInputProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInputProvider.h; sourceTree = "<group>"; };
+		CC684B42AF032FC1062AA318 /* PointOfSaleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfSaleTest.m; sourceTree = "<group>"; };
 		CC684C4B5E36440E31DC0C2F /* TDD_Course_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD_Course_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC684CCC39CFFE1AE694B950 /* FinishCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishCommand.h; sourceTree = "<group>"; };
 		CC684CFABE43178CB183150B /* Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Display.h; sourceTree = "<group>"; };
 		CC684DAA30AAA5264FA0C0E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedOperationTest.m; sourceTree = "<group>"; };
 		CC684E8A4D89956827621CBD /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		CC684EA3A42E7113672C6B01 /* Executor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Executor.h; sourceTree = "<group>"; };
-		CC684ED0FDD4E2CF844C20E4 /* BarcodeScannedCommandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannedCommandTest.m; sourceTree = "<group>"; };
 		CC684EE1D0B14E44AA8EF0CD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CC684F8C0817582B31612373 /* TestInputProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInputProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,18 +140,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09B334A81DAE684200163C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B334BA1DAE694F00163C5B /* XCTest.framework in Frameworks */,
+				0266B6AE89B2DA354D53444A /* libPods-TDD_CourseUnitTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC684325990FD889D99F208F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC684FFECC2550E58D4E6E35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2921574549FC3DB79AED2706 /* libPods-TDD_CourseTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +172,10 @@
 			children = (
 				94794ACED823556A8C404311 /* Pods-TDD_CourseTests.debug.xcconfig */,
 				8DA85BE43CE5550A1A4D822B /* Pods-TDD_CourseTests.release.xcconfig */,
+				C4258EA4B7181CF1BDBA98A8 /* Pods-TDD_CourseUnutTests.debug.xcconfig */,
+				3103528833DA0580873FDA14 /* Pods-TDD_CourseUnutTests.release.xcconfig */,
+				AF72957357CF470A2AD77B47 /* Pods-TDD_CourseUnitTest.debug.xcconfig */,
+				BCEC9209A458A5B01D12C935 /* Pods-TDD_CourseUnitTest.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -180,7 +183,10 @@
 		CB1DB8D2D20B8A8DEBCC1135 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09B334B91DAE694F00163C5B /* XCTest.framework */,
 				AB686F3DF67A118CE7A90CC7 /* libPods-TDD_CourseTests.a */,
+				AB91D9C16B09584BC7660F23 /* libPods-TDD_CourseUnutTests.a */,
+				8308E7203691B74696569811 /* libPods-TDD_CourseUnitTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,20 +201,12 @@
 			path = catalog;
 			sourceTree = "<group>";
 		};
-		CC684156DF4CA60D11576CC2 /* commands */ = {
-			isa = PBXGroup;
-			children = (
-				CC684ED0FDD4E2CF844C20E4 /* BarcodeScannedCommandTest.m */,
-			);
-			path = commands;
-			sourceTree = "<group>";
-		};
 		CC684230F327A5596C8C55B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				CC684C4B5E36440E31DC0C2F /* TDD_Course_iOS.app */,
-				CC6841E6BFCCCBF4E584EEA3 /* TDD_CourseTests.xctest */,
 				0996554B1DA4EB2E000D0CC7 /* TDD_Course_macOS */,
+				09B334AB1DAE684200163C5B /* TDD_CourseUnitTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,15 +274,16 @@
 			path = commands;
 			sourceTree = "<group>";
 		};
-		CC684BC268447863EA717F19 /* TDD_CourseTests */ = {
+		CC684B551EB6FC2B09F9F154 /* TDD_CourseUnitTest */ = {
 			isa = PBXGroup;
 			children = (
-				CC6847CDC7736164BA43437E /* Info.plist */,
-				CC6845A93E704AC84C62E8C0 /* PointOfSaleTest.m */,
-				CC684F79D10A11699C0D3C90 /* operations */,
-				CC684156DF4CA60D11576CC2 /* commands */,
+				09B334B31DAE687C00163C5B /* Info.plist */,
+				CC6842915A1D1388A677FD14 /* BarcodeScannedCommandTest.m */,
+				CC6846A1086AC0345E1247E8 /* BarcodeScannedOperationTest.m */,
+				CC68426BD56098BE78247931 /* FinishOperationTest.m */,
+				CC684B42AF032FC1062AA318 /* PointOfSaleTest.m */,
 			);
-			path = TDD_CourseTests;
+			path = TDD_CourseUnitTest;
 			sourceTree = "<group>";
 		};
 		CC684BD53139A9D366B1E443 /* Supporting Files */ = {
@@ -322,25 +321,16 @@
 			path = TDD_Course_iOS;
 			sourceTree = "<group>";
 		};
-		CC684F79D10A11699C0D3C90 /* operations */ = {
-			isa = PBXGroup;
-			children = (
-				CC684E34B44C0BD63533194D /* BarcodeScannedOperationTest.m */,
-				CC6847705F0A2E7B37CCCDB3 /* FinishOperationTest.m */,
-			);
-			path = operations;
-			sourceTree = "<group>";
-		};
 		CC684F9ED0F36C25224E57CA = {
 			isa = PBXGroup;
 			children = (
 				0996554C1DA4EB2E000D0CC7 /* TDD_Course_Mac */,
 				CC684230F327A5596C8C55B2 /* Products */,
 				CC684C8BA54727BD00A63524 /* TDD_Course_iOS */,
-				CC684BC268447863EA717F19 /* TDD_CourseTests */,
 				728D6C86B1C5350CD22F7CA0 /* Pods */,
 				CB1DB8D2D20B8A8DEBCC1135 /* Frameworks */,
 				CC6842A06B9245AD29517E90 /* TDD_Course */,
+				CC684B551EB6FC2B09F9F154 /* TDD_CourseUnitTest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -364,25 +354,24 @@
 			productReference = 0996554B1DA4EB2E000D0CC7 /* TDD_Course_macOS */;
 			productType = "com.apple.product-type.tool";
 		};
-		CC684847899ADEF18A86752C /* TDD_CourseTests */ = {
+		09B334AA1DAE684200163C5B /* TDD_CourseUnitTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC684DFDAB8AAC02C8010202 /* Build configuration list for PBXNativeTarget "TDD_CourseTests" */;
+			buildConfigurationList = 09B334B01DAE684200163C5B /* Build configuration list for PBXNativeTarget "TDD_CourseUnitTest" */;
 			buildPhases = (
-				AA0EA9C51112D74F23F0A2BD /* [CP] Check Pods Manifest.lock */,
-				CC684836921893E5BEEF4ECD /* Sources */,
-				CC684FFECC2550E58D4E6E35 /* Frameworks */,
-				CC68497A79C9509B3F8C40BC /* Resources */,
-				674407ABB4743C76B6C82741 /* [CP] Embed Pods Frameworks */,
-				D3AE1DB7DC5C530551A5D036 /* [CP] Copy Pods Resources */,
+				7D0738146E16A762C6A22E37 /* [CP] Check Pods Manifest.lock */,
+				09B334A71DAE684200163C5B /* Sources */,
+				09B334A81DAE684200163C5B /* Frameworks */,
+				09B334A91DAE684200163C5B /* Resources */,
+				0F6B49F3914F3C5AAC07FA9D /* [CP] Embed Pods Frameworks */,
+				1A89075C0A892FD61D5DA9AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CC6846B3AFEA15517C27E10B /* PBXTargetDependency */,
 			);
-			name = TDD_CourseTests;
-			productName = TDD_CourseTests;
-			productReference = CC6841E6BFCCCBF4E584EEA3 /* TDD_CourseTests.xctest */;
+			name = TDD_CourseUnitTest;
+			productName = TDD_CourseUnitTest;
+			productReference = 09B334AB1DAE684200163C5B /* TDD_CourseUnitTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CC684C2923600EC1C1538F11 /* TDD_Course_iOS */ = {
@@ -408,9 +397,14 @@
 		CC684AF96D149692EB29514E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				ORGANIZATIONNAME = "Tommaso Resti";
 				TargetAttributes = {
 					0996554A1DA4EB2E000D0CC7 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					09B334AA1DAE684200163C5B = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -430,12 +424,20 @@
 			targets = (
 				CC684C2923600EC1C1538F11 /* TDD_Course_iOS */,
 				0996554A1DA4EB2E000D0CC7 /* TDD_Course_macOS */,
-				CC684847899ADEF18A86752C /* TDD_CourseTests */,
+				09B334AA1DAE684200163C5B /* TDD_CourseUnitTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		09B334A91DAE684200163C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B334B41DAE687C00163C5B /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC684177908FB233B79DA783 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,18 +449,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC68497A79C9509B3F8C40BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC6843407C116D020C22536A /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		674407ABB4743C76B6C82741 /* [CP] Embed Pods Frameworks */ = {
+		0F6B49F3914F3C5AAC07FA9D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,10 +464,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDD_CourseTests/Pods-TDD_CourseTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDD_CourseUnitTest/Pods-TDD_CourseUnitTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AA0EA9C51112D74F23F0A2BD /* [CP] Check Pods Manifest.lock */ = {
+		1A89075C0A892FD61D5DA9AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDD_CourseUnitTest/Pods-TDD_CourseUnitTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D0738146E16A762C6A22E37 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -486,21 +495,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D3AE1DB7DC5C530551A5D036 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDD_CourseTests/Pods-TDD_CourseTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -526,6 +520,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09B334A71DAE684200163C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B334B81DAE693000163C5B /* PointOfSaleTest.m in Sources */,
+				09B334B51DAE693000163C5B /* BarcodeScannedCommandTest.m in Sources */,
+				09B334B61DAE693000163C5B /* BarcodeScannedOperationTest.m in Sources */,
+				09B334B71DAE693000163C5B /* FinishOperationTest.m in Sources */,
+				CC6849A082CE7D0F22C0CE40 /* Item.m in Sources */,
+				CC68469ACAB6AA54F4D13726 /* BarcodeScannedCommand.m in Sources */,
+				CC68441CB15DB6F3038F0D37 /* BarcodeScannedOperation.m in Sources */,
+				CC684484B22E0B1DA84F9F8D /* InMemoryCatalog.m in Sources */,
+				CC684C28CC6A7B48967D8BC4 /* Cart.m in Sources */,
+				CC684CF9435EBC0401F74ED2 /* PointOfSaleController.m in Sources */,
+				CC68410221A0D5CAD5368E0E /* Executor.m in Sources */,
+				CC684A74EF02480373FF70AB /* Controller.m in Sources */,
+				CC684CDB0620EE1709ACB5E3 /* FinishOperation.m in Sources */,
+				CC684C27DC6FEA3F3FCA04D8 /* TestInputProvider.m in Sources */,
+				CC6842144125B7CD3389D2B7 /* Command.m in Sources */,
+				CC68486C1A9633BE6B309DAF /* FinishCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC6844CCE3F8A6DC97037FE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,38 +565,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC684836921893E5BEEF4ECD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC684A8770118EE991D7E520 /* PointOfSaleTest.m in Sources */,
-				CC68411E82E50FFF2FF25500 /* Cart.m in Sources */,
-				CC684A9790783F34786D7BCA /* Executor.m in Sources */,
-				CC68455577CEDCFA5EEE66FE /* BarcodeScannedOperation.m in Sources */,
-				CC6843931F5DD3D416AEADF0 /* FinishOperation.m in Sources */,
-				CC6840B518FE8F3E11709968 /* BarcodeScannedCommand.m in Sources */,
-				CC6846917373E0E2871139CB /* FinishCommand.m in Sources */,
-				CC6840F224D1E32910C41794 /* Command.m in Sources */,
-				CC68403F8FA7DA04DFCA9DCB /* PointOfSaleController.m in Sources */,
-				CC684A0E78E1261538DE8E2A /* Controller.m in Sources */,
-				CC684B8CC629A4F3C320AFFA /* BarcodeScannedOperationTest.m in Sources */,
-				CC684CF880BC72F1E8AD75DA /* FinishOperationTest.m in Sources */,
-				CC68465B2196B5F76A8441C7 /* Item.m in Sources */,
-				CC684EF9A3568314FC10ED3E /* BarcodeScannedCommandTest.m in Sources */,
-				CC684DFA24CEAC8784B51482 /* InMemoryCatalog.m in Sources */,
-				CC684B1233BBCF88D5F2646F /* TestInputProvider.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CC6846B3AFEA15517C27E10B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CC684C2923600EC1C1538F11 /* TDD_Course_iOS */;
-			targetProxy = CC684694F83FB4C6F04687EE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CC68468DDBF7F127BE6BD34C /* Main.storyboard */ = {
@@ -616,6 +602,36 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		09B334B11DAE684200163C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF72957357CF470A2AD77B47 /* Pods-TDD_CourseUnitTest.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TDD_CourseUnitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.tommasoresti.TDD-CourseUnitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		09B334B21DAE684200163C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCEC9209A458A5B01D12C935 /* Pods-TDD_CourseUnitTest.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TDD_CourseUnitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.tommasoresti.TDD-CourseUnitTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -711,19 +727,6 @@
 			};
 			name = Release;
 		};
-		CC684A39AF8730DD86604FC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94794ACED823556A8C404311 /* Pods-TDD_CourseTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TDD_Course.app/TDD_Course";
-				INFOPLIST_FILE = TDD_CourseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "it.tommasoresti.TDD-CourseTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
 		CC684BF3BE92F95F213ECE71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -734,19 +737,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
-		};
-		CC684F97CE6B9722108FE1AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DA85BE43CE5550A1A4D822B /* Pods-TDD_CourseTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TDD_Course.app/TDD_Course";
-				INFOPLIST_FILE = TDD_CourseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "it.tommasoresti.TDD-CourseTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
 		};
 		CC684FEDF2917EE23D201F54 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -771,6 +761,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		09B334B01DAE684200163C5B /* Build configuration list for PBXNativeTarget "TDD_CourseUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B334B11DAE684200163C5B /* Debug */,
+				09B334B21DAE684200163C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CC684B9F4FF5FFBDB07B5612 /* Build configuration list for PBXNativeTarget "TDD_Course_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -785,15 +784,6 @@
 			buildConfigurations = (
 				CC68426A9A06EBBDD36E2656 /* Debug */,
 				CC68475BD1047FE3DE8AC877 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC684DFDAB8AAC02C8010202 /* Build configuration list for PBXNativeTarget "TDD_CourseTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC684A39AF8730DD86604FC9 /* Debug */,
-				CC684F97CE6B9722108FE1AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
